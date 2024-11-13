@@ -2,9 +2,11 @@
 
 Our first large-scale project in web development
 
+------------------------
+
  Drone assembly project
 
- 
+ -----------------------
 
  Team members:
  
@@ -17,6 +19,6 @@ Our first large-scale project in web development
  Kateryna Shapovalova
 
 
- 
+------------------------------------------ 
 
 Copyright © Danya4ka. All rights reserved.
