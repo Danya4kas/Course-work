@@ -4,6 +4,8 @@ Our first large-scale project in web development
 
  Drone assembly project
 
+ 
+
  Team members:
  
  Daniil Mosiychuk 
@@ -13,5 +15,8 @@ Our first large-scale project in web development
  Anna Bychyshyn
  
  Kateryna Shapovalova
+
+
+ 
 
 Copyright © Danya4ka. All rights reserved.
