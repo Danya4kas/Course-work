@@ -1,0 +1,71 @@
+
+/* dark theme  */
+
+body.dark_theme {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .dark_theme .nav_logo a {
+    color: white
+  }
+  
+  .dark_theme .lang_button{
+    color:#121212;
+  }
+  
+  .dark_theme .span_lang{
+    color: #000000;
+  }
+  
+  .dark_theme .exchange_rate p {
+    color: #ccc;
+  }
+  
+  .dark_theme .model_details p {
+    color: white;
+    font-weight: 700;
+  }
+  
+  .dark_theme .model_details h3 {
+    color: #ccc;
+    font-weight: 700;
+  }
+  
+  .dark_theme .component_text {
+    color: #eee;
+  }
+  
+  
+  .dark_theme header {
+    color: #000000;
+  }
+  
+  .dark_theme .icons .dark_theme .logo a,
+  .dark_theme .nav-links a,
+  .dark_theme .icons a {
+    color: #ffffff;
+  }
+  
+  .dark_theme .search_bar input {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid #666666;
+  }
+  
+  .dark_theme .component_icon_hover{
+    opacity: 1;
+  }
+  
+  .dark_theme .compomemt_icon_hover:hover{
+    background-color: #444444;
+  }
+  
+  .dark_theme .footer_text{
+    color: #ffffff;
+  }
+  
+  .dark_theme .footer_bar {
+    background-color: #3f3f3f;
+  }
+  
