@@ -1,4 +1,4 @@
-# Our course work, my dear friends)
+# Our course work)
 
 Our first large-scale project in web development
 
