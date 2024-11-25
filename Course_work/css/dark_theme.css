@@ -38,7 +38,7 @@ body.dark_theme {
   
   
   .dark_theme header {
-    color: #000000;
+    color:#1E201E;
   }
   
   .dark_theme .icons .dark_theme .logo a,
@@ -51,6 +51,10 @@ body.dark_theme {
     background-color: #444444;
     color: #ffffff;
     border: 1px solid #666666;
+  }
+
+  .dark_theme .dropdown_menu{
+    background-color: #697565;
   }
   
   .dark_theme .component_icon_hover{

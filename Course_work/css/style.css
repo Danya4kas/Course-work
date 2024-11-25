@@ -34,147 +34,176 @@ body {
 }
 
 
-
-.language_bar {
-  margin-top: 0.2rem;
-  display: flex;
-  justify-content: flex-end;
-  background-color: #e0e0e0;
-  padding: 10px 20px;
+.exchange_rate{
+background-color: #d9d9d9;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+padding-right: 0.2rem;
 }
-
-.lang_btn {
-  background: none;
-  border: none;
-  color: #000000;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.span_lang {
-  font-size: 20px;
-  font-weight: 600;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.header {
-  /* display: flex; */
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.exchange_rate {
-  cursor: pointer;
-  margin-left: 10px;
-  margin-top: 0.4rem;
-  margin-right: 20px;
-  font-size: 1rem;
-}
-
-.exchange_rate:hover {
-  color: #282828;
-}
-
 
 header {
-  padding: 20px;
+  padding: 15px 20px;
+  background: #464649;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-.nav_logo a {
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-  cursor: pointer;
-  color: black;
-}
- 
-
-
-.nav-links {
-  display: flex;
-  gap: 44px;
   align-items: center;
 }
 
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
-  color: #000000;
-  font-size: 1rem;
-  padding-bottom: 28px;
-  transition: color 0.3s;
-  transition: transform 0.3s;
-  font-weight: 700;
-}
-
-.nav-links a:hover {
-  border-bottom: 2px solid #333333;
-  transition: transform 0.3s;
-}
-
-.icons {
+.left-section {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.icons a {
+.burger_icon {
+  position: relative;
+}
+
+.burger_icon a {
   color: #000000;
-  font-size: 1.5em;
+  font-size: 2rem;
   cursor: pointer;
-  transition: transform 0.3s, color 0.3s;
+  transition: transform 0.3s;
+}
+
+.burger_icon a:hover {
+  transform: scale(1.1);
+}
+
+.burger_icon .dropdown_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #D9D9D9;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.burger_icon .dropdown_menu a {
+  display: block;
+  width: 15rem;
+  height: 10vh;
+  padding: 15px 10px;
+  font-size: 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  border-bottom: 2px solid rgb(255, 255, 255); 
+}
+
+.burger_icon .dropdown_menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.burger_icon .dropdown_menu a:last-child {
+  border-bottom: none; 
+}
+
+
+.nav_logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.center-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#searchForm {
+  width: 50%;
+}
+
+#search_item {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+#search_item:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icons {
+  margin-right: 12px;
+}
+
+.icons a {
+  color: #ffffff;
+  font-size: 1.6rem;
+  padding-right: 0.7rem;
+  transition: transform 0.3s ease; 
+  display: inline-block; 
 }
 
 .icons a:hover {
-  transform: scale(1.3);
+  transform: scale(1.2); 
+}
+
+.language_bar {
+  position: relative;
+  display: inline-block;
+}
+
+.lang_btn {
+  color: #ffffff;
+  background: none;
+  padding: 5px 0;
+  font-size: 1.2rem;
+  padding-top: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none; 
 }
 
 
-
-.search_bar {
-  display: none;
+.language_dropdown {
+  display: none; 
   position: absolute;
-  top: 71%;
-  right: -4px;
-  padding: 10px;
+  top: 100%;
+  left: 0;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  width: 250px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  padding: 10px 0;
+  z-index: 1000;
 }
 
-.search_bar.active {
-  display: block;
-  height: 287px;
-  width: 17rem;
-  overflow-y: scroll;
+.language_dropdown .dropdown_item {
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
 }
 
-.search_bar input {
-  width: 100%;
-  padding: 8px;
-  font-size: 1rem;
-  border: 2px solid #090909;
-  border-radius: 5px;
-  box-sizing: border-box;
+.language_dropdown .dropdown_item:hover {
+  background-color: #f1f1f1;
 }
 
-.search_bar input:focus {
-  outline: none;
-  border-color: #8a8686;
-}
 
 .product {
   padding-bottom: 15px;
@@ -213,10 +242,6 @@ nav {
 }
 
 
-
-
-
-/* category */
 
 #selectedComponents {
   position: fixed;
@@ -265,16 +290,71 @@ nav {
 }
 
 
-.footer_bar {
-  background-color: #000000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 15px;
+.banner {
+  background: url("../images/banner.webp");
+  background-size: cover;
+  padding: 3.5rem 0; 
+  text-align: center; 
+  margin-top: 4rem;
+}
+.banner_container {
+  max-width: 700px;
+  margin: 0 auto; 
+  color: #000000; 
+  backdrop-filter: blur(5px); 
+  padding: 2rem; 
+  border-radius: 1rem; 
 }
 
-.footer_text {
+.banner_container h3 {
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  margin-bottom: 1rem;
+}
+
+.banner_container p {
+  font-size: 1.2rem; 
+  margin-bottom: 2rem; 
   font-weight: 600;
-  font-size: 13px;
-  text-align: center;
-  color: #ccc;
+}
+
+.banner_container form {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 1rem;
+}
+
+.banner_container input {
+  width: 100%;
+  padding: 1rem; 
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid #fff; 
+  border-radius: 5rem;
+  background: rgba(255, 255, 255, 0.8); 
+  transition: border-color 0.3s; 
+}
+
+.banner_container input:focus {
+  border-color: rgb(0, 0, 0); 
+}
+
+.banner_container button {
+  padding: 1rem 2rem; 
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5rem;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.6s; 
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.banner_container button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  transform: scale(1.1);
 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dron4ik</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/categories_components.css">
   <link rel="stylesheet" href="css/dark_theme.css">
   <link rel="stylesheet" href="css/drone_comparison.css">
@@ -19,159 +20,62 @@
     <div class="exchange_rate" id="exchangeRate">
       <p class="currency_text">USD/UAH: Loading...</p>
     </div>
-    <div class="language_bar">
-      <button class="lang_btn">EN</button>
-      <span class="span_lang">|</span>
-      <button class="lang_btn">UA</button>
-    </div>
-  </div>
-
-  <header>
-    <nav>
-      <div class="nav_logo">
-        <a href="#">Dron4ik</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">Drones</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Components</a>
-          <div class="categories-grid">
-            <div class="category-item">
-              <img src="images/items_category/antenna_category.png" alt="Antenna">
-              <p>Антени</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/video_transmitter_category.png" alt="Video Transmitter">
-              <p>Відеопередавачі (VTX)</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/camera_category.png" alt="Camera">
-              <p>Камери</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/capacitor_category.png" alt="Capacitor">
-              <p>Конденсатори</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/controller_category.png" alt="Controller">
-              <p>Контролери</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/motor_category.png" alt="Motors">
-              <p>Мотори</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/propeller_category.png" alt="Propellers">
-              <p>Пропеллери</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/frame_category.avif" alt="Frame">
-              <p>Рами</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/pigtails_category.png" alt="Pigtails">
-              <p>Пігтейли</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/whoops_category.png" alt="Whoops">
-              <p>Вупи</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/receivers_category.png" alt="Receivers">
-              <p>Ресівери</p>
-            </div>
-            <div class="category-item">
-              <img src="images/items_category/equipment_category.png" alt="Equipment">
-              <p>Обладнення</p>
+    <header>
+      <nav>
+        <div class="left-section">
+          <div class="burger_icon">
+            <a href="#" id="burger_menu"><i class="bx bx-menu"></i></a>
+            <div class="dropdown_menu" id="burgerDropdown">
+              <a data-key="drone" href="#">Дрони</a>
+              <a data-key="components" href="#">Компоненти</a>
+              <a data-key="comparasion" href="#">Порівняння</a>
+              <a data-key="list" href="#">Збірка</a>
             </div>
           </div>
-        </li>
-      </ul>
-      <div class="icons">
-        <a href="#" id="search-toggle"><i class='bx bx-search'></i></a>
-        <a href="#" id="shop_cart"><i class='bx bx-cart'></i></a>
-        <a href=""><i class='bx bx-heart'></i></a>
-        <a href="#" id="theme-toggle"><i class='bx bx-sun'></i></a>
-        <a href="#" id="burger_menu"><i class='bx bx-menu'></i></a>
-      </div>
-    </nav>
-
-    <section class="container">
-      <form>
-        <div class="search_bar">
-          <input type="text" id="search_item" placeholder="Search...">
-          <div class="product_list" id="product_list">
-
-            <div class="product">
-              <img src="images/drones/RSvia-01.jpg" alt="">
-              <div class="product_details">
-                <h2>RSvia-01</h2>
-                <h3>268$</h3>
-              </div>
-            </div>
-
-            <div class="product">
-              <img src="images/drones/RSvia-02.jpg" alt="">
-              <div class="product_details">
-                <h2>RSvia-02</h2>
-                <h3>270$</h3>
-              </div>
-            </div>
-
-            <div class="product">
-              <img src="images/drones/RSvia-03.jpeg" alt="">
-              <div class="product_details">
-                <h2>RSvia-03</h2>
-                <h3>211$</h3>
-              </div>
-            </div>
-
-            <div class="product">
-              <img src="images/drones/RSvia-04.jpg" alt="">
-              <div class="product_details">
-                <h2>RSvia-04</h2>
-                <h3>169$</h3>
-              </div>
-            </div>
-
-            <div class="product">
-              <img src="images/drones/RSvia-05.png" alt="">
-              <div class="product_details">
-                <h2>RSvia-05</h2>
-                <h3>161$</h3>
-              </div>
-            </div>
-
-            <div class="product">
-              <img src="images/drones/RSvia-06.png" alt="">
-              <div class="product_details">
-                <h2>RSvia-06</h2>
-                <h3>186$</h3>
-              </div>
-            </div>
-
-
-            <div class="product">
-              <img src="images/drones/RSvia-01.jpg" alt="">
-              <div class="product_details">
-                <h2>RSvia-07</h2>
-                <h3>151$</h3>
-              </div>
-            </div>
-
+          <div class="nav_logo">
+            <a href="#">Dron4ik</a>
           </div>
         </div>
-      </form>
-    </section>
+        
+        <div class="center-section">
+          <form id="searchForm">
+            <input type="text" id="search_item" placeholder="Search..." />
+          </form>
+        </div>
+    
+        <div class="right-section">
+          <div class="icons">
+            <a href="#" id="theme-toggle-vector"><i class='bx bx-vector'></i></a>
+            <a href="#" id="theme-toggle-line"><i class='bx bx-line-chart-down'></i></a>
+            <a href="#" id="theme-toggle-sun"><i class="bx bx-sun"></i></a>
+          </div>
+        </div>
+        
+          <div class="language_bar">
+            <div id="languageToggle" class="lang_btn">
+              <span id="selectedLanguage">UA</span>
+              <i id="languageArrow" class="bx bx-chevron-down"></i>
+            </div>
+            <div id="languageDropdown" class="language_dropdown">
+              <div class="dropdown_item" data-lang="ua">UA</div>
+              <div class="dropdown_item" data-lang="en">EN</div>
+              <div class="dropdown_item" data-lang="de">DE</div>
+              <div class="dropdown_item" data-lang="pl">PL</div>
+              <div class="dropdown_item" data-lang="fr">FR</div>
+            </div>
+          </div>          
+        </div>
+      </nav>
+    </header>
+    
+    <div id="product_list">
 
-
-
-
-
-  </header>
-
+    </div>
+    
+    
+    
+  
   <main class="main-container">
-
     <div class="components_panel">
       <div class="components_list">
         <ul class="component_types">
@@ -181,7 +85,7 @@
                 <img class="component_icon_default" src="images/icons_category/battery.png" alt="Battery">
                 <img class="component_icon_hover" src="images/icons_category/battery_hover.png" alt="Battery">
               </div>
-              <div class="component_text">Акумулятор</div>
+              <div class="component_text" data-key="battery">Акумулятор</div>
             </a>
           </li>
           <li class="component_item" data-category="motor">
@@ -190,7 +94,7 @@
                 <img class="component_icon_default" src="images/icons_category/motor.png" alt="Motor">
                 <img class="component_icon_hover" src="images/icons_category/motor_hover.png" alt="Motor">
               </div>
-              <div class="component_text">Мотор</div>
+              <div class="component_text" data-key="motor">Мотор</div>
             </a>
           </li>
           <li class="component_item" data-category="frame">
@@ -199,7 +103,7 @@
                 <img class="component_icon_default" src="images/icons_category/frame.png" alt="Frame">
                 <img class="component_icon_hover" src="images/icons_category/frame_hover.png" alt="Frame">
               </div>
-              <div class="component_text">Рама</div>
+              <div class="component_text" data-key="frame">Рама</div>
             </a>
           </li>
           <li class="component_item" data-category="camera">
@@ -208,16 +112,16 @@
                 <img class="component_icon_default" src="images/icons_category/camera.png" alt="Camera">
                 <img class="component_icon_hover" src="images/icons_category/camera_hover.png" alt="Camera">
               </div>
-              <div class="component_text">Камера</div>
+              <div class="component_text" data-key="camera">Камера</div>
             </a>
           </li>
           <li class="component_item" data-category="propeller">
             <a href="#" class="component_link">
               <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/propeller.png" alt="Propellar">
-                <img class="component_icon_hover" src="images/icons_category/propeller_hover.png" alt="Propellar">
+                <img class="component_icon_default" src="images/icons_category/propeller.png" alt="Propeller">
+                <img class="component_icon_hover" src="images/icons_category/propeller_hover.png" alt="Propeller">
               </div>
-              <div class="component_text">Пропеллери</div>
+              <div class="component_text" data-key="propeller">Пропеллери</div>
             </a>
           </li>
           <li class="component_item" data-category="antenna">
@@ -226,15 +130,14 @@
                 <img class="component_icon_default" src="images/icons_category/antenna.png" alt="Antenna">
                 <img class="component_icon_hover" src="images/icons_category/antenna_hover.png" alt="Antenna">
               </div>
-              <div class="component_text">Антена</div>
+              <div class="component_text" data-key="antenna">Антена</div>
             </a>
           </li>
-
-
         </ul>
       </div>
     </div>
-
+  </main>
+  
 
     <div id="modelDisplay" class="model_panel">
       <div class="model_slider" id="modelSlider">
@@ -247,13 +150,59 @@
       <p>Total Cost: <span id="totalCost">0</span> грн</p>
     </div>
 
-  </main>
 
-  <footer>
-    <div class="footer_bar">
-      <p class="footer_text">Copyright © Danya4ka. All rights reserved.</p>
+  <section class="banner">
+    <div class="section_container banner_container">
+        <h3 data-key="banner_header">Отримуй інформацію про новинки!</h3>
+        <p data-key="banner_text">Підписуйся на нашу розсилку, щоб отримати ексклюзивні пропозиції!</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button data-key="banner_button" >Підписатися</button>
+        </form>
     </div>
-  </footer>
+</section>
+
+</main>
+<footer>
+  <div class="footer_container">
+    <div class="footer_logo">
+      <h1><a href="#">Dron4ik</a></h1>
+    </div>
+    <div class="footer_categories">
+      <h3 data-key="footer_category" class="footer_categories_text">Категорії</h3>
+      <ul>
+        <li><a href="#" data-key="drone">Дрони</a></li>
+        <li><a href="#" data-key="components">Компоненти</a></li>
+        <li><a href="#" data-key="comparasion">Порівняння</a></li>
+        <li><a href="#" data-key="list">Збірка</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer_contacts">
+      <h3 data-key="footer_contacts" class="footer_contacts_text">Контакти</h3>
+      <ul>
+        <li><i class="bx bx-phone"></i> +38 (067) 557-87-06</li>
+        <li><i class="bx bx-envelope"></i> dron4ik@gmail.com</li>
+        <li data-key="location"><i class="bx bx-location-plus"></i> Львів, Україна</li>
+      </ul>
+    </div>
+
+    <div class="footer_socials">
+      <h3 data-key="footer_socials" class="footer_socials_text">Ми в соцмережах</h3>
+      <div class="social_icons">
+        <a href="#" class="social_icon"><i class="bx bxl-telegram"></i></a>
+        <a href="#" class="social_icon"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="social_icon"><i class="bx bxl-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div data-key="footer_bottom" class="footer_bottom">
+    <p>© 2024 Danya4ka. Всі права захищені.</p>
+  </div>
+</footer>
+
+  
 
 
   <script src="script.js"></script>
