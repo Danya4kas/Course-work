@@ -190,12 +190,69 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const burgerMenu = document.getElementById("burger_menu");
   const burgerDropdown = document.getElementById("burgerDropdown");
+  const burgerIcon = burgerMenu.querySelector("i");
 
   burgerMenu.addEventListener("click", function (e) {
     e.preventDefault();
-    burgerDropdown.style.display =
-      burgerDropdown.style.display === "block" ? "none" : "block";
+    
+    const isDropdownVisible = burgerDropdown.style.display === "block";
+    burgerDropdown.style.display = isDropdownVisible ? "none" : "block";
+    burgerIcon.classList.toggle("bx-menu");
+    burgerIcon.classList.toggle("bx-x");
   });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  let currentIndex = 0;
+  let slideInterval;
+
+//slider
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle("active", i === index);
+      slide.style.transform = `translateX(-${index * 100}%)`;
+    });
+  }
+
+ 
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+  }
+
+
+  function startSlideInterval() {
+    slideInterval = setInterval(nextSlide, 5000); 
+  }
+
+
+  function stopSlideInterval() {
+    clearInterval(slideInterval);
+  }
+
+  prevBtn.addEventListener("click", function () {
+    stopSlideInterval();
+    prevSlide();
+    startSlideInterval();
+  });
+
+  nextBtn.addEventListener("click", function () {
+    stopSlideInterval();
+    nextSlide();
+    startSlideInterval();
+  });
+
+  startSlideInterval();
 });
 
 
