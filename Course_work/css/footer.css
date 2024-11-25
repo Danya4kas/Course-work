@@ -8,7 +8,7 @@ footer {
   
   .footer_container {
     display: flex;
-    gap: 40px;
+    gap: 97px;
     max-width: 1200px;
     margin-bottom: 20px; 
   }
@@ -18,6 +18,9 @@ footer {
     color: #ffffff;
     font-size: 2rem;
     font-weight: bold;
+  }
+
+  .footer_contacts{
   }
   
   .footer_categories, .footer_contacts, .footer_socials {
@@ -67,7 +70,7 @@ footer {
 
 
   .social_icons{
-    margin-right: 13rem;
+    margin-right: 9rem;
   }
   
   
