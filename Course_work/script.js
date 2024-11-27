@@ -186,21 +186,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// burger_menu
-document.addEventListener("DOMContentLoaded", function () {
-  const burgerMenu = document.getElementById("burger_menu");
-  const burgerDropdown = document.getElementById("burgerDropdown");
-  const burgerIcon = burgerMenu.querySelector("i");
-
-  burgerMenu.addEventListener("click", function (e) {
-    e.preventDefault();
-    
-    const isDropdownVisible = burgerDropdown.style.display === "block";
-    burgerDropdown.style.display = isDropdownVisible ? "none" : "block";
-    burgerIcon.classList.toggle("bx-menu");
-    burgerIcon.classList.toggle("bx-x");
-  });
-});
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -276,87 +261,3 @@ function updateExchangeRate() {
 }
 updateExchangeRate();
 setInterval(updateExchangeRate, 600000);
-
-//category
-document.addEventListener("DOMContentLoaded", function () {
-  const modelDisplay = document.getElementById("modelSlider");
-  const componentList = document.getElementById("componentList");
-  const totalCostElement = document.getElementById("totalCost");
-
-  let totalCost = 0;
-
-  const modelsData = {
-    battery: [
-      { name: "LiIon 6s1p ", price: "1460", img: "images/Acum_6s1p.jpg" },
-      { name: "LiIon 6s2p ", price: "2740", img: "images/Acum_6s2p.jpg" },
-      { name: "LiIon 6s2p", price: "2740", img: "images/Acum_6S2P.jpg" },
-    ],
-    motor: [
-      { name: "BrotherHobby", price: "2500", img: "images/brotherhobby.jfif" },
-      { name: "EMAX ECOLL", price: "820", img: "images/emax_ecoll.jfif" },
-    ],
-    frame: [
-      { name: "Mark 4", price: "502", img: "images/frame_item.avif" },
-    ],
-    camera: [
-      { name: "Caddx Ratel 2", price: "1054", img: "images/camera_item.jpg" },
-    ],
-    propeller: [
-      { name: "HQPROP HQ", price: "178", img: "images/propellar_item.png" },
-    ],
-    antenna: [
-      { name: "Rush Cherry", price: "142", img: "images/antenna_item.jpg" },
-    ],
-  };
-
-  function showModels(category) {
-    modelDisplay.innerHTML = "";
-    const models = modelsData[category];
-    models.forEach((model) => {
-      const modelItem = document.createElement("div");
-      modelItem.classList.add("model_item");
-
-      modelItem.innerHTML = `
-        <img src="${model.img}" alt="${model.name}" class="model_image">
-        <div class="model_details">
-          <h3>${model.name}</h3>
-          <p>${model.price} грн</p>
-          <button class="add_button" onclick="addToBuild('${model.name}', ${model.price})">+</button>
-          <button class="remove_button" onclick="removeFromBuild('${model.name}', ${model.price})">-</button>
-        </div>
-      `;
-      modelDisplay.appendChild(modelItem);
-    });
-  }
-
-  window.addToBuild = function (name, price) {
-    const listItem = document.createElement("li");
-    listItem.textContent = `${name} - ${price} грн`;
-    listItem.setAttribute("data-price", price);
-    componentList.appendChild(listItem);
-
-    totalCost += parseFloat(price);
-    totalCostElement.textContent = totalCost.toFixed(2) + " грн";
-  };
-
-  window.removeFromBuild = function (name, price) {
-    const listItems = componentList.getElementsByTagName("li");
-
-    for (let i = 0; i < listItems.length; i++) {
-      const listItem = listItems[i];
-      if (listItem.textContent.includes(name)) {
-        componentList.removeChild(listItem);
-        totalCost -= parseFloat(price);
-        totalCostElement.textContent = totalCost.toFixed(2) + " грн";
-        break;
-      }
-    }
-  };
-
-  document.querySelectorAll(".component_item").forEach((item) => {
-    item.addEventListener("mouseenter", function () {
-      const category = item.getAttribute("data-category");
-      showModels(category);
-    });
-  });
-});

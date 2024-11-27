@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arimo:ital,wght@0,400..700;1,400..700&family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+
+
+
+
 ::-webkit-scrollbar {
   width: 11px;
 }
@@ -21,7 +30,7 @@
 body {
   background-color: #ffffff;
   color: #5f5f5f;
-  font-family: Arial, sans-serif;
+  font-family: Poppins sans-serif;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -34,11 +43,12 @@ body {
 }
 
 
-.exchange_rate{
-background-color: #d9d9d9;
-padding-top: 0.5rem;
-padding-bottom: 0.5rem;
-padding-right: 0.2rem;
+.exchange_rate {
+  background-color: #d9d9d9;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.2rem;
+  font-family: Poppins, sans-serif;
 }
 
 header {
@@ -56,7 +66,7 @@ nav {
   align-items: center;
 }
 
-.left-section {
+.left_section {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -64,57 +74,31 @@ nav {
 
 .burger_icon {
   position: relative;
+  margin-top: 0.5rem;
 }
 
 .burger_icon a {
-  color: #000000;
-  font-size: 2rem;
+  color: #D9D9D9;
+  font-size: 3rem;
   cursor: pointer;
   transition: transform 0.3s;
 }
 
 .burger_icon a:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-.burger_icon .dropdown_menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #D9D9D9;
-
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  z-index: 10;
-}
-
-.burger_icon .dropdown_menu a {
-  display: block;
-  width: 15rem;
-  height: 10vh;
-  padding: 15px 10px;
-  font-size: 1rem;
-  color: #333;
-  text-decoration: none;
-  transition: background-color 0.2s;
-  border-bottom: 2px solid rgb(255, 255, 255); 
-}
-
-.burger_icon .dropdown_menu a:hover {
-  background-color: #f0f0f0;
-}
-
-.burger_icon .dropdown_menu a:last-child {
-  border-bottom: none; 
-}
 
 
 .nav_logo a {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400#D9D9D9;
+  font-family: Big Shoulders Display;
 }
 
 .center-section {
@@ -127,19 +111,39 @@ nav {
   width: 50%;
 }
 
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 #search_item {
   width: 100%;
-  padding: 8px 12px;
+  padding: 8px 36px 8px 12px;
   font-size: 1rem;
   border: 2px solid #ccc;
-  border-radius: 5px;
+  background-color: #D9D9D9;
+  border-radius: 24px;
   transition: border-color 0.3s;
+}
+
+.search-container i {
+  position: absolute;
+  right: 12px;
+  font-size: 22px;
+  color: #000000;
 }
 
 #search_item:focus {
   outline: none;
   border-color: #333;
 }
+
+#search_item::placeholder {
+  color: #414141;
+}
+
+
 
 .right-section {
   display: flex;
@@ -152,15 +156,16 @@ nav {
 }
 
 .icons a {
-  color: #ffffff;
+  color: #D9D9D9;
   font-size: 1.6rem;
   padding-right: 0.7rem;
-  transition: transform 0.3s ease; 
-  display: inline-block; 
+  transition: transform 0.3s ease;
+  display: inline-block;
 }
 
 .icons a:hover {
-  transform: scale(1.2); 
+  transform: scale(1.2);
+  color: #fcfcfc;
 }
 
 .language_bar {
@@ -169,21 +174,29 @@ nav {
 }
 
 .lang_btn {
-  color: #ffffff;
+  color: #D9D9D9;
   background: none;
   padding: 5px 0;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
   padding-top: 1px;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 5px;
-  border: none; 
+  border: none;
+  transition: transform 0.3s ease;
+  font-family: Big Shoulders Display;
+}
+
+.lang_btn:hover {
+  transform: scale(1.2);
+  color: #fcfcfc;
 }
 
 
 .language_dropdown {
-  display: none; 
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -192,6 +205,9 @@ nav {
   min-width: 160px;
   padding: 10px 0;
   z-index: 1000;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+  font-family: Big Shoulders Display;
 }
 
 .language_dropdown .dropdown_item {
@@ -239,6 +255,52 @@ nav {
   height: 300px;
 }
 
+.main-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.left-section {
+  background-color: #D9D9D9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -3.3rem;
+
+  display: flex;
+  margin-left: -1.2rem;
+}
+
+
+.dropdown_menu {
+  padding-top: 0rem;
+
+}
+
+.dropdown_menu a {
+  display: block;
+  width: 15rem;
+  height: 9vh;
+  padding: 21px 6px;
+  font-size: 2rem;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: Alumni Sans, sans-serif;
+  transition: background-color 0.2s;
+  border-bottom: 2px solid rgb(255, 255, 255);
+
+}
+
+.burger_icon .dropdown_menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.burger_icon .dropdown_menu a:last-child {
+  border-bottom: none;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -246,6 +308,7 @@ nav {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
+  margin-top: -3rem;
 }
 
 .slider_container {
@@ -261,11 +324,11 @@ nav {
 
 .slide img {
   width: 100%;
-  height: 100%;
+  height: 94%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 15px;
+  margin-top: 19px;
 }
-
 
 .slider_controls {
   position: absolute;
@@ -293,105 +356,63 @@ nav {
 
 
 
-#selectedComponents {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f1f1f1;
-  padding: 15px;
-  border-top: 2px solid #ddd;
-  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 20;
-}
-
-#selectedComponents h2 {
-  font-size: 1.2rem;
-  color: #333;
-  margin: 0;
-}
-
-#componentList {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-}
-
-#componentList li {
-  background-color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  color: #333;
-  white-space: nowrap;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#totalCost {
-  font-weight: bold;
-  color: #171717;
-  font-size: 1.2rem;
-}
-
 
 .banner {
-  background: url("../images/banner.webp");
+  background: url(../images/banner.webp);
   background-size: cover;
-  padding: 3.5rem 0; 
-  text-align: center; 
-  margin-top: 4rem;
+  padding: 3.5rem 0;
+  text-align: center;
+  margin-top: 0rem;
+
 }
+
 .banner_container {
   max-width: 700px;
-  margin: 0 auto; 
-  color: #000000; 
-  backdrop-filter: blur(5px); 
-  padding: 2rem; 
-  border-radius: 1rem; 
+  margin: 0 auto;
+  color: #000000;
+  backdrop-filter: blur(5px);
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .banner_container h3 {
-  font-size: 2.5rem; 
-  font-weight: 700; 
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  font-family: Arimo, sans-serif;
 }
 
 .banner_container p {
-  font-size: 1.2rem; 
-  margin-bottom: 2rem; 
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
   font-weight: 600;
+  font-family: Arimo, sans-serif;
 }
 
 .banner_container form {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
 }
 
 .banner_container input {
   width: 100%;
-  padding: 1rem; 
+  padding: 1rem;
   font-size: 1rem;
   outline: none;
-  border: 2px solid #fff; 
+  border: 2px solid #fff;
   border-radius: 5rem;
-  background: rgba(255, 255, 255, 0.8); 
-  transition: border-color 0.3s; 
+  background: rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s;
 }
 
 .banner_container input:focus {
-  border-color: rgb(0, 0, 0); 
+  border-color: rgb(0, 0, 0);
 }
 
 .banner_container button {
-  padding: 1rem 2rem; 
+  padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 500;
   border: none;
@@ -399,7 +420,7 @@ nav {
   background-color: #ffffff;
   color: #000000;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.6s; 
+  transition: background-color 0.3s, transform 0.6s;
   background: rgba(255, 255, 255, 0.8);
 }
 

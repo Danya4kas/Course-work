@@ -22,15 +22,10 @@
     </div>
     <header>
       <nav>
-        <div class="left-section">
+        <div class="left_section">
           <div class="burger_icon">
             <a href="#" id="burger_menu"><i class="bx bx-menu"></i></a>
-            <div class="dropdown_menu" id="burgerDropdown">
-              <a data-key="drone" href="#">Дрони</a>
-              <a data-key="components" href="#">Компоненти</a>
-              <a data-key="comparasion" href="#">Порівняння</a>
-              <a data-key="list" href="#">Збірка</a>
-            </div>
+        
           </div>
           <div class="nav_logo">
             <a href="#">Dron4ik</a>
@@ -39,9 +34,13 @@
         
         <div class="center-section">
           <form id="searchForm">
-            <input type="text" id="search_item" placeholder="Search..." />
+            <div class="search-container">
+              <input type="text" id="search_item" placeholder="Search..." />
+              <i class='bx bx-search-alt-2' ></i>
+            </div>
           </form>
         </div>
+        
     
         <div class="right-section">
           <div class="icons">
@@ -72,99 +71,41 @@
 
     </div>
     
+    <main class="main-container">
+      <div class="left-section">
+        <div class="dropdown_menu" id="burgerDropdown">
+          <a data-key="drone" href="#">Дрони</a>
+          <a data-key="components" href="#">Компоненти</a>
+          <a data-key="comparasion" href="#">Порівняння</a>
+          <a data-key="list" href="#">Збірка</a>
+        </div>
+      </div>
     
+      <section class="slider">
+        <div class="slider_container">
+          <div class="slide active">
+            <img src="./images/slider_drone_1.jpg" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="./images/slider_drone_2.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="./images/slider_drone_3.jpg" alt="Slide 3">
+          </div>
+        </div>
+        <div class="slider_controls">
+          <button id="prevBtn" class="control_btn">❮</button>
+          <button id="nextBtn" class="control_btn">❯</button>
+        </div>
+      </section>
+    </main>
     
-  
-  <main class="main-container">
-    <div class="components_panel">
-      <div class="components_list">
-        <ul class="component_types">
-          <li class="component_item" data-category="battery">
-            <a href="#" class="component_link">
-              <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/battery.png" alt="Battery">
-                <img class="component_icon_hover" src="images/icons_category/battery_hover.png" alt="Battery">
-              </div>
-              <div class="component_text" data-key="battery">Акумулятор</div>
-            </a>
-          </li>
-          <li class="component_item" data-category="motor">
-            <a href="#" class="component_link">
-              <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/motor.png" alt="Motor">
-                <img class="component_icon_hover" src="images/icons_category/motor_hover.png" alt="Motor">
-              </div>
-              <div class="component_text" data-key="motor">Мотор</div>
-            </a>
-          </li>
-          <li class="component_item" data-category="frame">
-            <a href="#" class="component_link">
-              <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/frame.png" alt="Frame">
-                <img class="component_icon_hover" src="images/icons_category/frame_hover.png" alt="Frame">
-              </div>
-              <div class="component_text" data-key="frame">Рама</div>
-            </a>
-          </li>
-          <li class="component_item" data-category="camera">
-            <a href="#" class="component_link">
-              <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/camera.png" alt="Camera">
-                <img class="component_icon_hover" src="images/icons_category/camera_hover.png" alt="Camera">
-              </div>
-              <div class="component_text" data-key="camera">Камера</div>
-            </a>
-          </li>
-          <li class="component_item" data-category="propeller">
-            <a href="#" class="component_link">
-              <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/propeller.png" alt="Propeller">
-                <img class="component_icon_hover" src="images/icons_category/propeller_hover.png" alt="Propeller">
-              </div>
-              <div class="component_text" data-key="propeller">Пропеллери</div>
-            </a>
-          </li>
-          <li class="component_item" data-category="antenna">
-            <a href="#" class="component_link">
-              <div class="component_icon">
-                <img class="component_icon_default" src="images/icons_category/antenna.png" alt="Antenna">
-                <img class="component_icon_hover" src="images/icons_category/antenna_hover.png" alt="Antenna">
-              </div>
-              <div class="component_text" data-key="antenna">Антена</div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <section class="slider">
-      <div class="slider_container">
-        <div class="slide active">
-          <img src="./images/slider_drone_1.jpg" alt="Slide 1">
-        </div>
-        <div class="slide">
-          <img src="./images/slider_drone_2.jpg" alt="Slide 2">
-        </div>
-        <div class="slide">
-          <img src="./images/slider_drone_3.jpg" alt="Slide 3">
-        </div>
-      </div>
-      <div class="slider_controls">
-        <button id="prevBtn" class="control_btn">❮</button>
-        <button id="nextBtn" class="control_btn">❯</button>
-      </div>
-    </section>
-  </main>
   
 
     <div id="modelDisplay" class="model_panel">
       <div class="model_slider" id="modelSlider">
 
       </div>
-    </div>
-    <div id="selectedComponents">
-      <h2>Selected Components</h2>
-      <ul id="componentList"></ul>
-      <p>Total Cost: <span id="totalCost">0</span> грн</p>
     </div>
 
     

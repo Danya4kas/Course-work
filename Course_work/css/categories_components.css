@@ -58,8 +58,8 @@
   .components_panel {
     width: 20%;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
     margin-left: 2rem;
   }
   

@@ -2,7 +2,7 @@
 /* dark theme  */
 
 body.dark_theme {
-    background-color: #000000;
+    background-color: #3C3D37;
     color: #ffffff;
   }
   
@@ -18,8 +18,8 @@ body.dark_theme {
     color: #000000;
   }
   
-  .dark_theme .exchange_rate p {
-    color: #ccc;
+  .dark_theme .exchange_rate  {
+    background-color: #838383;
   }
   
   .dark_theme .model_details p {
@@ -42,8 +42,7 @@ body.dark_theme {
   }
   
   .dark_theme .icons .dark_theme .logo a,
-  .dark_theme .nav-links a,
-  .dark_theme .icons a {
+  .dark_theme .nav-links a{
     color: #ffffff;
   }
   
@@ -52,7 +51,11 @@ body.dark_theme {
     color: #ffffff;
     border: 1px solid #666666;
   }
+  .dark_theme #search_item {
+    background-color: #81907C;
+   /* border: none; */
 
+  }
   .dark_theme .dropdown_menu{
     background-color: #697565;
   }
