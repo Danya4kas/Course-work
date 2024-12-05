@@ -1,0 +1,36 @@
+{
+  "ua": {
+    "language": "Українська",
+    "drones": "Дрони",
+    "components": "Компоненти",
+    "comparison": "Порівняння",
+    "assembly": "Збірка",
+    "search": "Пошук",
+    "currency": "грн",
+    "amount": "шт.",
+    "sort": "Сортування",
+    "rating": "за рейтингом",
+    "price_asc": "від дешевих до дорогих",
+    "price_desc": "від дорогих до дешевих",
+    "category-drones": "Дрони /",
+    "price": "Ціна:",
+    "characteristics": "Характеристики"
+  },
+  "en": {
+    "language": "English",
+    "drones": "Drones",
+    "components": "Components",
+    "comparison": "Comparison",
+    "assembly": "Assembly",
+    "search": "Search",
+    "currency": "uah",
+    "amount": "pcs",
+    "sort": "Sort",
+    "rating": "by rating",
+    "price_asc": "from cheap to expensive",
+    "price_desc": "from expensive to cheap",
+    "category-drones": "Drones /",
+    "price": "Price:",
+    "characteristics": "Characteristics"
+  }
+}
