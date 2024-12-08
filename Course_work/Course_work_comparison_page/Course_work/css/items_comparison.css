@@ -1,0 +1,245 @@
+/* drone_comparison css */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Big+Shoulders+Text:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Big+Shoulders+Display:wght@100..900&family=Big+Shoulders+Text:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+main{
+    display: flex;
+    height: 100%;
+    .left-side-menu{
+        width: 350px;
+        background: #D9D9D9;
+        h1{
+            font-family: Alumni Sans;
+            color: white;
+            font-size: 40px;
+            font-weight: 600;
+            border-bottom: 1px solid white;
+            margin: 0;
+            padding: 20px;
+            line-height: 70px;
+        }
+    }
+    .right-side-content{
+        /* width: calc(100% - 350px); */
+        width: 100%;
+        .components{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 20px 0 20px 0;
+            .form{
+                padding: 8px;
+                border: 1px solid var(--text-color);
+                width: 25%;
+                img{
+                    width: 100%;
+                    border: 1px solid var(--text-color);
+                }
+                h1{
+                    font-family: "Big Shoulders Display", sans-serif;
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+                p{
+                    font-family: Big Shoulders Text;
+                    font-size: 30px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .characteristics{
+            h1{
+                color: white;
+                margin: 0;
+            }
+            .head-name{
+                padding: 5px;
+                font-family: Alumni Sans;
+                font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                background: #464649;
+            }
+            .option-form{
+                .option{
+                    font-family: Alumni Sans;
+                    background: #D9D9D9;
+                    text-align: center;
+                    border-left: var(--text-color) 1px solid;
+                    border-right: var(--text-color) 1px solid;
+                }
+                .box-info{
+                    font-family: Alumni Sans;
+                    font-size: 20px;
+                    display: flex;
+                    /* width: 100%; */
+                    text-align: center;
+                    border: 1px solid var(--text-color);
+                    .left-box{
+                        border-right: 1px solid var(--text-color);
+                        width: 50%;
+                        height: 40px;
+                        
+                    }
+                    .right-box{
+                        width: 50%;
+                        height: 40px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+/* items-comparison */
+.all_sections{
+    font-family: Alumni Sans;
+    padding: 10px 10% 10px 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+    .head-txt{
+        margin: 50px 0;
+        text-align: center;
+        font-size: 60px;
+    }
+    .head-txt-2{
+        margin: 50px 0;
+        font-size: 60px;
+    }
+    .section{
+        cursor: pointer;
+        .info-row{
+
+            display: flex;
+            justify-content: space-between;
+            border-bottom: #D9D9D9 solid 4px;
+            padding-bottom: 5px;
+
+            .clear_button{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                height: fit-content;
+                background: var(--light-gray);
+                border-radius: 100px;
+                padding: 5px;
+                color: var(--text-color);
+            }
+        }
+        
+        span{
+            line-height: 0;
+            border-radius: 100%;
+            padding: 0 14px;
+            color: #464649;
+            background: #D9D9D9;
+        }
+        .images{
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            flex-wrap: wrap;
+            img{
+                border: #464649 solid 1px;
+                width: 13rem;
+            }
+        }
+    }
+}
+
+.selected{
+    border: green solid 3px !important;
+}
+
+
+
+
+@media(max-width:1030px){
+    header{
+        .logo{
+            .name{
+                display: none;
+            }
+        }
+        ul{
+            display: none !important;
+        }
+    }
+}
+
+@media(max-width:680px){
+    header{
+        .search{
+            display: none;
+        }
+    }
+    main{
+        .all_sections{
+            padding: 10px 5px 10px 5%;
+            .head-txt-2{
+                font-size: 40px;
+            }
+            .head-txt{
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media(max-width:430px){
+   
+    main{
+        .all_sections{
+            .head-txt-2{
+                font-size: 40px;
+            }
+            .section{
+                .info-row{
+                    display: block;
+                }
+                .images{
+                    img{
+                         width: 10rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:375px){
+   
+    main{
+        .all_sections{
+            padding: 10px 5px 10px 5%;
+            .head-txt-2{
+                font-size: 35px;
+            }
+            .head-txt{
+                font-size: 35px;
+            }
+            .section{
+                .info-row{
+                    display: block;
+                    h1{
+                        margin-bottom: 10px;     
+                    }
+                    
+                }
+                .images{
+                    img{
+                         width: 8rem;
+                    }
+                }
+            }
+        }
+    }
+}
