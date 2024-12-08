@@ -9,39 +9,39 @@
       "amount": 2,
       "characteristics": [
         {
-          "title": "Контролер",
+          "title": "controller",
           "description": "SpeedyBee F405 V3 50A"
         },
         {
-          "title": "Рама",
+          "title": "frame",
           "description": "Mark4 7inch 295mm"
         },
         {
-          "title": "Мотори",
+          "title": "motors",
           "description": "EMAX ECOII 2807 1300KV"
         },
         {
-          "title": "Пропеллери",
+          "title": "propellers",
           "description": "HQprop HQ 7X4X3 7040"
         },
         {
-          "title": "Відеопередавач",
+          "title": "transmitter",
           "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
         },
         {
-          "title": "Ресівер ERLS",
+          "title": "receiver",
           "description": "HappyModel ES900RX 915MHz 1PC 915Mhz RX"
         },
         {
-          "title": "Камера",
+          "title": "camera",
           "description": "Caddx Ratel 2"
         },
         {
-          "title": "Антена (відео) lollipop",
+          "title": "antenna",
           "description": "Rush Cherry SMA-RHCP-160mm"
         },
         {
-          "title": "Акумулятор",
+          "title": "battery",
           "description": "LiIon 6s2p Samsung INR21700-40T"
         }
       ]
@@ -55,43 +55,43 @@
       "amount": 2,
       "characteristics": [
         {
-          "title": "Контролер",
+          "title": "controller",
           "description": "SpeedyBee F405 V3 50A"
         },
         {
-          "title": "Рама",
+          "title": "frame",
           "description": "Mark4 7inch 295mm"
         },
         {
-          "title": "Мотори",
+          "title": "motors",
           "description": "BrotherHobby Avenger 2806.5 1300KV"
         },
         {
-          "title": "Пропеллери",
+          "title": "propellers",
           "description": "HQprop HQ 7X4X3 7040",
-	  "amount": 2
+          "amount": 2
         },
         {
-          "title": "Відеопередавач",
+          "title": "transmitter",
           "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
         },
         {
-          "title": "Ресівер ERLS",
+          "title": "receiver",
           "description": "BAYCK ELRS 915MHz"
         },
         {
-          "title": "Камера",
+          "title": "camera",
           "description": "Caddx Ratel 2"
         },
         {
-          "title": "Антена (відео) lollipop",
+          "title": "antenna",
           "description": "Rush Cherry SMA-RHCP-160mm"
         },
         {
-          "title": "Акумулятор",
+          "title": "battery",
           "description": "LiIon 6s2p Samsung 21700 8000 mah"
         }
-	]
+      ]
     },
     {
       "id": 3,
@@ -102,43 +102,43 @@
       "amount": 2,
       "characteristics": [
         {
-          "title": "Контролер",
+          "title": "controller",
           "description": "SpeedyBee F405 V3 50A"
         },
         {
-          "title": "Рама",
+          "title": "frame",
           "description": "Mark4 7inch 295mm"
         },
         {
-          "title": "Мотори",
+          "title": "motors",
           "description": "EMAX ECOII 2807 1300KV"
         },
         {
-          "title": "Пропеллери",
+          "title": "propellers",
           "description": "HQprop HQ 7X4X3 7040",
-	  "amount": 2
+          "amount": 2
         },
         {
-          "title": "Відеопередавач",
+          "title": "transmitter",
           "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
         },
         {
-          "title": "Ресівер ERLS",
+          "title": "receiver",
           "description": "BAYCK ELRS 915MHz"
         },
         {
-          "title": "Камера",
+          "title": "camera",
           "description": "Caddx Ratel 2"
         },
         {
-          "title": "Антена (відео) lollipop",
+          "title": "antenna",
           "description": "Rush Cherry SMA-RHCP-160mm"
         },
         {
-          "title": "Акумулятор",
+          "title": "battery",
           "description": "LiIon 6s2p Samsung 21700 8000 mah"
         }
-	]
+      ]
     },
     {
       "id": 4,

@@ -2,6 +2,15 @@ header img {
   height: 40px;
 }
 
+#menu {
+  height: 40px;
+  cursor: pointer;
+}
+
+#menu:hover {
+  background-color: var(--gray-focus);
+}
+
 .logo {
   display: flex;
   flex-direction: row;

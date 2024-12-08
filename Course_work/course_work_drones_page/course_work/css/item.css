@@ -60,12 +60,17 @@
   font-weight: 300;
   font-style: normal;
   font-size: 36px;
-  letter-spacing: -2px;
 
   border-collapse: collapse;
+  margin-bottom: 50px;
 }
 
 .item_info table td {
   padding: 10px;
   border: 2px solid var(--text-color);
+  font-size: 20px;
+}
+
+.characteristic-title {
+  font-weight: 600;
 }

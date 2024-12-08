@@ -14,7 +14,17 @@
     "price_desc": "від дорогих до дешевих",
     "category-drones": "Дрони /",
     "price": "Ціна:",
-    "characteristics": "Характеристики"
+    "characteristics": "Характеристики",
+    "controller": "Контролер",
+    "frame": "Рама",
+    "motors": "Мотори",
+    "propellers": "Пропеллери",
+    "transmitter": "Відеопередавач",
+    "receiver": "Ресівер ERLS",
+    "camera": "Камера",
+    "antenna": "Антена (відео)",
+    "battery": "Акумулятор",
+    "noCharacteristics": "Немаї характеристик"
   },
   "EN": {
     "language": "English",
@@ -31,6 +41,16 @@
     "price_desc": "from expensive to cheap",
     "category-drones": "Drones /",
     "price": "Price:",
-    "characteristics": "Characteristics"
+    "characteristics": "Characteristics",
+    "controller": "Controller",
+    "frame": "Frame",
+    "motors": "Motors",
+    "propellers": "Propellers",
+    "transmitter": "Transmitter",
+    "receiver": "Receiver ERLS",
+    "camera": "Camera",
+    "antenna": "Antenna (video)",
+    "battery": "Battery",
+    "noCharacteristics": "No characteristics"
   }
 }
