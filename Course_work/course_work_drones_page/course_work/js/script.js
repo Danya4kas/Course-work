@@ -51,6 +51,21 @@ async function createDroneCard(drone) {
   const compareImage = document.createElement("img");
   compareImage.classList.add("compare");
   compareImage.src = "./icons/compare.svg";
+
+  //my code
+  compareLink.onclick=() => {
+    let ids = localStorage["selected_ids"]
+    if(ids){
+      if(!ids.split(",").includes(drone.id+"")){
+        localStorage["selected_ids"]+=","+drone.id
+      }
+      
+    }
+    else{localStorage["selected_ids"]=drone.id}
+    
+    console.log(localStorage)
+  }
+  
   compareLink.appendChild(compareImage);
   // <a><img class="add_to_analitic" src="./icons/plus.svg" /></a>
   const addLink = document.createElement("a");
