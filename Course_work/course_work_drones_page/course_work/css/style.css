@@ -32,7 +32,6 @@ main {
   margin-top: 100px;
   margin-left: 25%;
   width: 75%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -55,7 +54,7 @@ main {
   background-color: var(--light-gray);
   text-align: center;
   height: 40px;
-  color: var(--white);
+  color: var(--text-color);
   font-size: 24px;
   width: 250px;
 }
@@ -70,6 +69,7 @@ main {
 
 .sort option {
   background-color: var(--dark-gray);
+  color: var(--white);
   font-size: 18px;
   height: 200px;
 }
@@ -138,11 +138,15 @@ main {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 10px;
+  right: 10px;
+  gap: 2px;
 }
 
 .drone-card .top-right-images a {
+  background-color: var(--light-gray);
+  border-radius: 20px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -152,8 +156,14 @@ main {
 
 .drone-card .top-right-images a:hover {
   cursor: pointer;
-  background-color: var(--light-gray);
+  background-color: var(--dark-gray);
 }
+
+.top-right-images a:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1839%)
+    hue-rotate(59deg) brightness(117%) contrast(70%);
+}
+
 .drone-card .top-right-images img {
   width: 100%;
 }

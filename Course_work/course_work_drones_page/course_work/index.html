@@ -7,21 +7,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>drons</title>
+
+    <script src="js/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
       integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
       crossorigin="anonymous"></script>
     <script>
       $(function () {
-        $("#header").load("./components/header.html");
-        $("#navigation").load("./components/menu.html");
+        $("#header").load("./components/header.html", function () {
+          const lang = getCurrentLanguage();
+          setHeaderLang(lang);
+        });
+        $("#navigation").load("./components/menu.html", function () {
+          const lang = getCurrentLanguage();
+          loadLanguage();
+        });
       });
     </script>
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
   </head>
-  <body>
+  <body id="index_page">
     <!-- HEADER -->
     <header id="header"></header>
     <!-- MAIN -->
@@ -47,6 +54,38 @@
           </select>
         </div>
         <div class="drones">
+          <!-- <div class="drone-card">
+            <div class="images">
+              <img
+                class="main-image"
+                src="./images/Rectangle 16.png"
+                alt="Drone image" />
+              <div class="top-right-images">
+                <a>
+                  <img class="drone" src="./icons/screw-driver.svg" />
+                </a>
+                <a>
+                  <img class="compare" src="./icons/compare.svg" />
+                </a>
+                <a>
+                  <img class="add_to_analitic" src="./icons/plus.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="text">
+              <h6><a href="./item.html?id=1&type=drones">RSvia-01</a></h6>
+              <div class="info">
+                <p>
+                  10520
+                  <span class="currency">грн</span>
+                </p>
+                <p>
+                  Залишок: 2
+                  <span class="amount">шт</span>
+                </p>
+              </div>
+            </div>
+          </div> -->
         </div>
       </div>
     </main>

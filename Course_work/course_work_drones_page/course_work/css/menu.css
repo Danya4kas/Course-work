@@ -16,7 +16,7 @@
 }
 
 .menu li {
-  color: #ffffff;
+  color: var(--text-color);
   border-bottom: 3px solid #ffffff;
   width: 100%;
   height: 70px;

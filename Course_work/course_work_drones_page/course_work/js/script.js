@@ -1,10 +1,9 @@
 async function loadPage() {
   checkTheme();
 
-  if (
-    window.location.pathname === "/" ||
-    window.location.pathname === "/index.html"
-  ) {
+  const page = document.getElementById("index_page");
+
+  if (page) {
     const drones = await fetch("./items.json").then((response) =>
       response.json()
     );
@@ -24,7 +23,7 @@ async function createDroneCard(drone) {
     response.json()
   );
 
-  const data = language[lang.toLowerCase()];
+  const data = language[lang];
   const currency = data.currency;
   const amountText = data.amount;
 
@@ -43,8 +42,9 @@ async function createDroneCard(drone) {
   topRightImages.appendChild(droneLink);
   const droneImage = document.createElement("img");
   droneImage.classList.add("drone");
-  droneImage.src = "./icons/drone.svg";
+  droneImage.src = "./icons/screw-driver.svg";
   droneLink.appendChild(droneImage);
+  // <a><img class="compare" src="./icons/compare.svg" /></a>
   const compareLink = document.createElement("a");
   compareLink.href = "#";
   topRightImages.appendChild(compareLink);
@@ -52,6 +52,14 @@ async function createDroneCard(drone) {
   compareImage.classList.add("compare");
   compareImage.src = "./icons/compare.svg";
   compareLink.appendChild(compareImage);
+  // <a><img class="add_to_analitic" src="./icons/plus.svg" /></a>
+  const addLink = document.createElement("a");
+  addLink.href = "#";
+  topRightImages.appendChild(addLink);
+  const addImage = document.createElement("img");
+  addImage.classList.add("add_to_analitic");
+  addImage.src = "./icons/plus.svg";
+  addLink.appendChild(addImage);
   images.appendChild(topRightImages);
   const text = document.createElement("div");
   text.classList.add("text");
@@ -81,6 +89,7 @@ async function createDroneCard(drone) {
   droneCard.appendChild(images);
   droneCard.appendChild(text);
   document.querySelector(".drones").appendChild(droneCard);
+  console.log("Drones:" + document.querySelector(".drones"));
 }
 
 async function sort() {
@@ -107,8 +116,8 @@ async function sort() {
 function getCurrentLanguage() {
   const lang = localStorage.getItem("lang");
   if (!lang) {
-    localStorage.setItem("lang", "ua");
-    return "ua";
+    localStorage.setItem("lang", "UA");
+    return "UA";
   }
 
   return lang;
@@ -131,14 +140,15 @@ async function loadLanguage() {
     response.json()
   );
 
-  const data = language[lang.toLowerCase()];
+  const data = language[lang];
   console.log(data);
 
   Object.keys(data).forEach((key) => {
-    const element = document.getElementById("lang-" + key);
-    if (element) {
+    const elements = document.querySelectorAll(`[id="lang-${key}"]`);
+
+    elements.forEach((element) => {
       element.innerHTML = data[key];
-    }
+    });
   });
 }
 
@@ -166,4 +176,5 @@ function changeTheme() {
   }
 }
 
-window.addEventListener("load", loadPage);
+// window.addEventListener("load", loadPage);
+document.addEventListener("DOMContentLoaded", loadPage);

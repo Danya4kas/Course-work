@@ -24,10 +24,6 @@
   letter-spacing: -2px;
 }
 
-.item_image img {
-  border: 1px solid var(--text-color);
-}
-
 .item_info {
   padding: 40px 40px 40px 0;
   display: flex;

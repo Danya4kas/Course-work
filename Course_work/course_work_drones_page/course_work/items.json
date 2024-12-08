@@ -6,7 +6,21 @@
       "price": 10200,
       "description": "Some info about RSvia-01",
       "image": "Rectangle 16.png",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "Some title",
+          "description": "Some description"
+        },
+        {
+          "title": "Some title",
+          "description": "Some description"
+        },
+        {
+          "title": "Some title",
+          "description": "Some description"
+        }
+      ]
     },
     {
       "id": 2,

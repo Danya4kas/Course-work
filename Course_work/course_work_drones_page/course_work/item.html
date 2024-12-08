@@ -16,10 +16,12 @@
       $(function () {
         $("#header").load("./components/header.html", function () {
           const lang = getCurrentLanguage();
-
           setHeaderLang(lang);
         });
-        $("#navigation").load("./components/menu.html");
+        $("#navigation").load("./components/menu.html", function () {
+          const lang = getCurrentLanguage();
+          loadLanguage();
+        });
       });
     </script>
     <link rel="stylesheet" href="./css/variables.css" />
@@ -40,11 +42,11 @@
           <img src="./images/Rectangle 16.png" alt="Drone image" />
         </div>
         <div class="item_info">
-          <h2>RSvia-01</h2>
+          <h2 id="title">RSvia-01</h2>
           <div class="info">
-            <p>
+            <p id="item-price">
               <span id="lang-price">Ціна:</span>
-              10520
+              <span id="price">10520</span>
               <span id="lang-currency">грн</span>
             </p>
             <table>

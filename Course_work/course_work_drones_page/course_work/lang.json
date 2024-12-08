@@ -1,5 +1,5 @@
 {
-  "ua": {
+  "UA": {
     "language": "Українська",
     "drones": "Дрони",
     "components": "Компоненти",
@@ -16,7 +16,7 @@
     "price": "Ціна:",
     "characteristics": "Характеристики"
   },
-  "en": {
+  "EN": {
     "language": "English",
     "drones": "Drones",
     "components": "Components",
