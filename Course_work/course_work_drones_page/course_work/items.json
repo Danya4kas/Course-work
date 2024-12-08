@@ -3,45 +3,147 @@
     {
       "id": 1,
       "name": "RSvia-01",
-      "price": 10200,
+      "price": 13507,
       "description": "Some info about RSvia-01",
       "image": "Rectangle 16.png",
       "amount": 2,
       "characteristics": [
         {
-          "title": "Some title",
-          "description": "Some description"
+          "title": "Контролер",
+          "description": "SpeedyBee F405 V3 50A"
         },
         {
-          "title": "Some title",
-          "description": "Some description"
+          "title": "Рама",
+          "description": "Mark4 7inch 295mm"
         },
         {
-          "title": "Some title",
-          "description": "Some description"
+          "title": "Мотори",
+          "description": "EMAX ECOII 2807 1300KV"
+        },
+        {
+          "title": "Пропеллери",
+          "description": "HQprop HQ 7X4X3 7040"
+        },
+        {
+          "title": "Відеопередавач",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "Ресівер ERLS",
+          "description": "HappyModel ES900RX 915MHz 1PC 915Mhz RX"
+        },
+        {
+          "title": "Камера",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "Антена (відео) lollipop",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "Акумулятор",
+          "description": "LiIon 6s2p Samsung INR21700-40T"
         }
       ]
     },
     {
       "id": 2,
       "name": "RSvia-02",
-      "price": 11200,
+      "price": 13624,
       "description": "Some info about RSvia-02",
       "image": "Rectangle 16.png",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "Контролер",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "Рама",
+          "description": "Mark4 7inch 295mm"
+        },
+        {
+          "title": "Мотори",
+          "description": "BrotherHobby Avenger 2806.5 1300KV"
+        },
+        {
+          "title": "Пропеллери",
+          "description": "HQprop HQ 7X4X3 7040",
+	  "amount": 2
+        },
+        {
+          "title": "Відеопередавач",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "Ресівер ERLS",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "Камера",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "Антена (відео) lollipop",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "Акумулятор",
+          "description": "LiIon 6s2p Samsung 21700 8000 mah"
+        }
+	]
     },
     {
       "id": 3,
       "name": "RSvia-03",
-      "price": 12300,
+      "price": 11381,
       "description": "Some info about RSvia-03",
       "image": "Rectangle 16.png",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "Контролер",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "Рама",
+          "description": "Mark4 7inch 295mm"
+        },
+        {
+          "title": "Мотори",
+          "description": "EMAX ECOII 2807 1300KV"
+        },
+        {
+          "title": "Пропеллери",
+          "description": "HQprop HQ 7X4X3 7040",
+	  "amount": 2
+        },
+        {
+          "title": "Відеопередавач",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "Ресівер ERLS",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "Камера",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "Антена (відео) lollipop",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "Акумулятор",
+          "description": "LiIon 6s2p Samsung 21700 8000 mah"
+        }
+	]
     },
     {
       "id": 4,
       "name": "RSvia-04",
-      "price": 13400,
+      "price": 6847,
       "description": "Some info about RSvia-04",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -49,7 +151,7 @@
     {
       "id": 5,
       "name": "RSvia-05",
-      "price": 14500,
+      "price": 6572,
       "description": "Some info about RSvia-05",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -57,7 +159,7 @@
     {
       "id": 6,
       "name": "RSvia-06",
-      "price": 15600,
+      "price": 10630,
       "description": "Some info about RSvia-06",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -65,7 +167,7 @@
     {
       "id": 7,
       "name": "RSvia-07",
-      "price": 16700,
+      "price": 7802,
       "description": "Some info about RSvia-07",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -73,7 +175,7 @@
     {
       "id": 8,
       "name": "RSvia-08",
-      "price": 23400,
+      "price": 9213,
       "description": "Some info about RSvia-08",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -81,7 +183,7 @@
     {
       "id": 9,
       "name": "RSvia-09",
-      "price": 23200,
+      "price": 10319,
       "description": "Some info about RSvia-09",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -89,7 +191,7 @@
     {
       "id": 10,
       "name": "RSvia-10",
-      "price": 32200,
+      "price": 1306,
       "description": "Some info about RSvia-10",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -97,7 +199,7 @@
     {
       "id": 11,
       "name": "RSvia-11",
-      "price": 54200,
+      "price": 7431,
       "description": "Some info about RSvia-11",
       "image": "Rectangle 16.png",
       "amount": 2
@@ -105,7 +207,7 @@
     {
       "id": 12,
       "name": "RSvia-12",
-      "price": 22200,
+      "price": 0,
       "description": "Some info about RSvia-12",
       "image": "Rectangle 16.png",
       "amount": 2
