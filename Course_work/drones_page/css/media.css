@@ -30,4 +30,37 @@
     #language{
         font-size: 25px;
     }
+
+    .menu{
+        display: none !important;
+    }
+
+    .content{
+        margin: 0;
+        width: 100%;
+    }
+
+    .drones{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .drone-card{
+        width: 145px;
+        height: 198px;
+        padding: 10px;
+    }
+    
+    .drone-card .images {
+        width: 145px;
+        height: 139px;
+    }
+
+    .drone-card .top-right-images{
+        top: 5px;
+        right: 5px;
+    }
+
+    .drone-card .top-right-images a {
+        width: 11px;
+    }
 }
