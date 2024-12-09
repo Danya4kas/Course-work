@@ -39,7 +39,7 @@ async function get_products(){
             
             if(keys[j]=="characteristics"){
                 
-                for(let k = 0; k < info[ids_arr[0]]["characteristics"].length; k++){
+                for(let k = 0; k < info[ids_arr[0]-1]["characteristics"].length; k++){
                     
                     let div = document.createElement("div");
                     div.classList.add("option-form")
