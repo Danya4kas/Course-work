@@ -228,9 +228,9 @@ function changeTheme() {
   body.classList.toggle("dark-theme");
 
   if (body.classList.contains("dark-theme")) {
-    localStorage.setItem("theme", "bx-sun");
+    localStorage.setItem("theme", "dark");
   } else {
-    localStorage.setItem("light_theme", "bx-moon");
+    localStorage.setItem("theme", "light");
   }
 }
 
