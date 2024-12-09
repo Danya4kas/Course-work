@@ -51,23 +51,21 @@ async function createDroneCard(drone) {
   const compareImage = document.createElement("img");
   compareImage.classList.add("compare");
   compareImage.src = "./icons/compare.svg";
-
-  //my code
-  compareLink.onclick=() => {
-    let ids = localStorage["selected_ids"]
-    if(ids){
-      if(ids.split(",").length>1){
-        alert("Comparison is full")
+    //my code
+    compareLink.onclick=() => {
+      let ids = localStorage["selected_ids"]
+      if(ids){
+        if(ids.split(",").length>1){
+          alert("Comparison is full")
+        }
+        else if(!ids.split(",").includes(drone.id+"")){
+          localStorage["selected_ids"]+=","+drone.id
+        }
+        
       }
-      else if(!ids.split(",").includes(drone.id+"")){
-        localStorage["selected_ids"]+=","+drone.id
-      }
-      
+      else{localStorage["selected_ids"]=drone.id}
+    
     }
-    else{localStorage["selected_ids"]=drone.id}
-  
-  }
-
   compareLink.appendChild(compareImage);
   // <a><img class="add_to_analitic" src="./icons/plus.svg" /></a>
   const addLink = document.createElement("a");
@@ -187,9 +185,9 @@ function changeTheme() {
   body.classList.toggle("dark-theme");
 
   if (body.classList.contains("dark-theme")) {
-    localStorage.setItem("theme", "dark");
+    localStorage.setItem("theme", "bx-sun");
   } else {
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("light_theme", "bx-moon");
   }
 }
 

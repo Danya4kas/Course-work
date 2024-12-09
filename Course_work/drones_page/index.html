@@ -9,32 +9,76 @@
     <title>drons</title>
 
     <script src="js/script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
       $(function () {
-        $("#header").load("./components/header.html", function () {
-          const lang = getCurrentLanguage();
-          setHeaderLang(lang);
-        });
-        $("#navigation").load("./components/menu.html", function () {
-          const lang = getCurrentLanguage();
-          loadLanguage();
-        });
+        const lang = getCurrentLanguage();
+        setHeaderLang(lang);
+        loadLanguage();
       });
     </script>
+
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/search.js"></script>
+    <script src="js/item.js"></script> 
   </head>
+
   <body id="index_page">
     <!-- HEADER -->
-    <header id="header"></header>
+    <header>
+      <div class="logo">
+        <img id="menu" src="./icons/menu.svg" />
+        <h1 class="name">
+          <a href="../drone.html">DRONCHIK</a>
+        </h1>
+      </div>
+      <div class="searchWithRes">
+        <div class="search">
+          <input
+            type="text"
+            oninput="makeSearch(this, this.value)"
+            id="searchField"
+            placeholder="Search..." />
+          <img src="./icons/finder.svg" alt="Search Icon" />
+        </div>
+        <div id="searchResults">
+          <ul id="searchResultsList"></ul>
+        </div>
+      </div>
+      <ul>
+        <li><img id="analitica" src="./icons/analitica.svg" /></li>
+        <li>
+          <img
+            id="light_theme"
+            src="./icons/light_theme.svg"
+            onclick="changeTheme()" />
+        </li>
+        <li>
+          <select id="language" onchange="changeLanguage()">
+            <option selected>UA</option>
+            <option>EN</option>
+          </select>
+        </li>
+      </ul>
+    </header>
+
     <!-- MAIN -->
     <main>
-      <!-- MENU -->
-      <aside class="menu" id="navigation"></aside>
+      <aside class="menu">
+        <ul>
+          <li class="lato-regular"><a id="lang-drones">Дрони</a></li>
+          <li class="lato-regular"><a id="lang-components">Компоненти</a></li>
+          <li class="lato-regular"><a id="lang-comparison">Порівняння</a></li>
+          <li class="lato-regular"><a id="lang-assembly">Збірка</a></li>
+        </ul>
+      </aside>
+
       <!-- CONTENT -->
       <div class="content">
         <div class="sort">
@@ -54,38 +98,7 @@
           </select>
         </div>
         <div class="drones">
-          <!-- <div class="drone-card">
-            <div class="images">
-              <img
-                class="main-image"
-                src="./images/Rectangle 16.png"
-                alt="Drone image" />
-              <div class="top-right-images">
-                <a>
-                  <img class="drone" src="./icons/screw-driver.svg" />
-                </a>
-                <a>
-                  <img class="compare" src="./icons/compare.svg" />
-                </a>
-                <a>
-                  <img class="add_to_analitic" src="./icons/plus.svg" />
-                </a>
-              </div>
-            </div>
-            <div class="text">
-              <h6><a href="./item.html?id=1&type=drones">RSvia-01</a></h6>
-              <div class="info">
-                <p>
-                  10520
-                  <span class="currency">грн</span>
-                </p>
-                <p>
-                  Залишок: 2
-                  <span class="amount">шт</span>
-                </p>
-              </div>
-            </div>
-          </div> -->
+      
         </div>
       </div>
     </main>

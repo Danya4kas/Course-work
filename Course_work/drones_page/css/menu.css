@@ -13,6 +13,7 @@
 .menu ul {
   list-style-type: none;
   width: 100%;
+  font-weight: 600;
 }
 
 .menu li {
@@ -24,9 +25,10 @@
 }
 
 .menu li:hover {
-  background-color: #7a7a7e;
+  background-color: #c2c2c4;
 }
 
 .menu a {
   line-height: 100px;
+  cursor: pointer;
 }
