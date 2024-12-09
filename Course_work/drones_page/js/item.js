@@ -57,4 +57,3 @@ async function loadInfo() {
 }
 
 window.addEventListener("load", loadInfo);
-
