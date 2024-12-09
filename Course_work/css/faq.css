@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap');
+
+.faq_container {
+    padding: 2rem;
+}
+
+.section_header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.faq_grid {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.faq_card {
+    background: linear-gradient(135deg, #f8f7f5, #e0e0e0);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_header h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: #333;
+}
+
+.faq_header .arrow {
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq_card.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq_content {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.faq_card.active .faq_content {
+    display: block;
+    opacity: 1;
+}

@@ -39,7 +39,9 @@ body.dark_theme {
   .dark_theme .dropdown_menu a{
     color: white;
   }
-  
+  .dark_theme .left-section {
+    background-color: #697565;
+  }
   .dark_theme header {
     color:#1E201E;
   }
