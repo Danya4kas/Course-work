@@ -1,14 +1,25 @@
 // dark theme
 document.getElementById("theme-toggle-sun").addEventListener("click", function () {
+
   document.body.classList.toggle("dark_theme");
+  
   const themeIcon = this.querySelector("i");
 
   if (document.body.classList.contains("dark_theme")) {
     themeIcon.classList.replace("bx-sun", "bx-moon");
+    localStorage.setItem("theme","dark")
   } else {
     themeIcon.classList.replace("bx-moon", "bx-sun");
+    localStorage.setItem("theme","light")
   }
 });
+
+window.onload=Onload()
+function Onload(){
+  if(localStorage.getItem("theme")=="dark"){
+    document.body.classList.toggle("dark_theme");
+  }
+}
 
 
 // language
