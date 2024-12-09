@@ -31,4 +31,6 @@
 .menu a {
   line-height: 100px;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
 }
