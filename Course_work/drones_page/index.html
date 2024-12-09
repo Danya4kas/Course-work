@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drons</title>
+
+    <script src="js/script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $("#header").load("./components/header.html", function () {
+          const lang = getCurrentLanguage();
+          setHeaderLang(lang);
+        });
+        $("#navigation").load("./components/menu.html", function () {
+          const lang = getCurrentLanguage();
+          loadLanguage();
+        });
+      });
+    </script>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="index_page">
+    <!-- HEADER -->
+    <header id="header"></header>
+    <!-- MAIN -->
+    <main>
+      <!-- MENU -->
+      <aside class="menu" id="navigation"></aside>
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="sort">
+          <label class="lato-regular" for="sort" id="lang-sort">
+            Сортування:
+          </label>
+          <select class="lato-light" name="sort" id="sort" onchange="sort()">
+            <option class="lato-light" value="rating" id="lang-rating">
+              за рейтингом
+            </option>
+            <option class="lato-light" value="descending" id="lang-price_desc">
+              від дорогих до дешевих
+            </option>
+            <option class="lato-light" value="ascending" id="lang-price_asc">
+              від дешевих до дорогих
+            </option>
+          </select>
+        </div>
+        <div class="drones">
+          <!-- <div class="drone-card">
+            <div class="images">
+              <img
+                class="main-image"
+                src="./images/Rectangle 16.png"
+                alt="Drone image" />
+              <div class="top-right-images">
+                <a>
+                  <img class="drone" src="./icons/screw-driver.svg" />
+                </a>
+                <a>
+                  <img class="compare" src="./icons/compare.svg" />
+                </a>
+                <a>
+                  <img class="add_to_analitic" src="./icons/plus.svg" />
+                </a>
+              </div>
+            </div>
+            <div class="text">
+              <h6><a href="./item.html?id=1&type=drones">RSvia-01</a></h6>
+              <div class="info">
+                <p>
+                  10520
+                  <span class="currency">грн</span>
+                </p>
+                <p>
+                  Залишок: 2
+                  <span class="amount">шт</span>
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
