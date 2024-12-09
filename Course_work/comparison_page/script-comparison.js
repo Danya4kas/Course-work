@@ -27,7 +27,7 @@ async function get_products(){
             let form = document.createElement("div")
             form.classList.add("form")
             form.innerHTML=`
-                <img src="${info[ids_arr[i]-1]["image"]}" alt="">
+                <img src="${"./images/"+info[ids_arr[i]-1]["image"]}" alt="">
                 <h1>${info[ids_arr[i]-1]["name"]}</h1>
                 <p>${info[ids_arr[i]-1]["price"]}</p>
                 `
@@ -93,7 +93,7 @@ async function get_products(){
         for(let j = 0; j < data_arr.length; j++){
                  
             let img = document.createElement("img");
-            img.src=info[data_arr[j]-1]["image"];
+            img.src="./images/"+info[data_arr[j]-1]["image"];
     
             img_div.append(img); 
         }
