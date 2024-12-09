@@ -87,4 +87,62 @@
   .drone-card .info {
     font-size: 12px;
   }
+
+  .content {
+    height: 100%;
+  }
+  .item_page {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .item_image {
+    align-items: center !important;
+    width: 100%;
+    padding: 0;
+  }
+
+  .item_image img {
+    border: 1px solid var(--dark-gray);
+    width: 80%;
+  }
+
+  .item_info {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .item_info h2 {
+    font-size: 42px !important;
+  }
+
+  #item-characteristics {
+    margin: 0;
+  }
+
+  #footer {
+    display: flex !important;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color: var(--dark-gray);
+    position: fixed;
+    bottom: 0;
+  }
+
+  #footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+  }
+
+  #footer ul img {
+    height: 30px;
+  }
 }

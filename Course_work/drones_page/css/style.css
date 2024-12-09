@@ -179,6 +179,7 @@ main {
 }
 
 .pagination {
+  margin-bottom: 100px;
 }
 
 .pagination button {
@@ -197,4 +198,12 @@ main {
 .pagination button:hover {
   background-color: var(--dark-gray);
   color: var(--white);
+}
+
+.item_page {
+  width: 100%;
+  background-color: var(--background-white);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }

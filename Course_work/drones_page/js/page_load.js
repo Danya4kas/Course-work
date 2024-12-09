@@ -33,4 +33,14 @@ async function includeComponents() {
   if (outputItems == "components") {
     document.getElementById("components_types").classList.remove("hidden");
   }
+
+  document.querySelector("#footer").innerHTML = await fetch(
+    "./components/footer.html"
+  )
+    .then((response) => response.text())
+    .then((html) => {
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = html;
+      return tempDiv.innerHTML;
+    });
 }
