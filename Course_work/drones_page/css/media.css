@@ -1,0 +1,33 @@
+@media(max-width: 375px){
+    header{
+        height: 40px;
+        justify-content: flex-end;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .search{
+        position: relative;
+        margin-right: 20px;
+    }
+
+    .search input{
+        width: 200px;
+        height: 26px;
+    }
+
+    header ul{
+        padding: 0;
+        gap: 5px;
+    }
+
+    header img{
+        height: 25px;
+    }
+
+    #language{
+        font-size: 25px;
+    }
+}
