@@ -10,7 +10,6 @@ async function loadInfo() {
   console.log(drone);
   if (drone) {
     document.getElementById("title").innerHTML = drone.name;
-    document.getElementById("item_image").src = "./images/" + drone.image;
   }
 
   const lang = getCurrentLanguage();
