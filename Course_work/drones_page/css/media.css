@@ -1,65 +1,82 @@
-@media(max-width: 375px){
-    header{
-        height: 40px;
-        justify-content: flex-end;
-    }
+@media (max-width: 375px) {
+  header {
+    height: 40px;
+    justify-content: flex-end;
+  }
 
-    .logo{
-        display: none;
-    }
-    .search{
-        position: relative;
-        margin-right: 20px;
-    }
+  .logo {
+    display: none;
+  }
+  .search {
+    position: relative;
+    margin-right: 20px;
+  }
 
-    .search input{
-        width: 200px;
-        height: 26px;
-    }
+  .search input {
+    width: 200px;
+    height: 26px;
+  }
 
-    header ul{
-        padding: 0;
-        gap: 5px;
-    }
+  header ul {
+    padding: 0;
+    gap: 5px;
+  }
 
-    header img{
-        height: 25px;
-    }
+  header img {
+    height: 25px;
+  }
 
-    #language{
-        font-size: 25px;
-    }
+  #language {
+    font-size: 25px;
+  }
 
-    .menu{
-        display: none !important;
-    }
+  .menu {
+    display: none !important;
+  }
 
-    .content{
-        margin: 0;
-        width: 100%;
-    }
+  .content {
+    margin: 0;
+    width: 100%;
+  }
 
-    .drones{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .drones {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 0;
+  }
 
-    .drone-card{
-        width: 145px;
-        height: 198px;
-        padding: 10px;
-    }
-    
-    .drone-card .images {
-        width: 145px;
-        height: 139px;
-    }
+  .drone-card {
+    width: 145px;
+    height: 198px;
+    padding: 10px;
+  }
 
-    .drone-card .top-right-images{
-        top: 5px;
-        right: 5px;
-    }
+  .drone-card .images {
+    width: 145px;
+    height: 139px;
+  }
 
-    .drone-card .top-right-images a {
-        width: 11px;
-    }
+  .drone-card .top-right-images {
+    top: 5px;
+    right: 5px;
+  }
+
+  .drone-card .top-right-images a {
+    width: 11px;
+  }
+
+  .sort {
+    margin: 50px 0 10px;
+    padding-right: 10px;
+  }
+
+  .lato-regular {
+    font-size: 18px;
+  }
+
+  #sort {
+    width: 95px;
+    height: 15px;
+    font-size: 11px;
+    border: 2px snow;
+  }
 }
