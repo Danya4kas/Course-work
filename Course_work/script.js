@@ -11,6 +11,15 @@ document.getElementById("theme-toggle-sun").addEventListener("click", function (
 });
 
 
+const burgerMenu = document.getElementById('burger_menu');
+const burgerDropdown = document.getElementById('burgerDropdown');
+burgerMenu.addEventListener('click', (event) => {
+  event.preventDefault(); 
+
+  burgerDropdown.classList.toggle('open');
+});
+
+
 // language
 document.addEventListener("DOMContentLoaded", function () {
   const languageToggle = document.getElementById("languageToggle");
@@ -239,6 +248,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   startSlideInterval();
 });
+
+
+
+const faq = document.querySelector(".faq_grid");
+const faqCards = document.querySelectorAll('.faq_card');
+faqCards.forEach(card => {
+  card.addEventListener('click', () => {
+     
+      faqCards.forEach(c => {
+          if (c !== card) {
+              c.classList.remove('active'); 
+          }
+      });
+      
+      card.classList.toggle('active');
+  });
+});
+
+
+
+
+
+//currency
 
 const exchangeRateElement = document.getElementById("exchangeRate");
 const apiKey = "12494d57b16409579143429c";

@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/dark_theme.css">
   <link rel="stylesheet" href="css/drone_comparison.css">
   <link rel="stylesheet" href="css/adaptation.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/video.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="icon" type="image/x-icon" href="images/favicon_icon.png">
 </head>
@@ -25,7 +27,6 @@
         <div class="left_section">
           <div class="burger_icon">
             <a href="#" id="burger_menu"><i class="bx bx-menu"></i></a>
-
           </div>
           <div class="nav_logo">
             <a href="drone.html">DRONO-DROME</a>
@@ -75,7 +76,7 @@
       <div class="dropdown_menu" id="burgerDropdown">
         <a data-key="drone" href="./drones_page/">Дрони</a>
         <a data-key="components" href="#">Компоненти</a>
-        <a data-key="comparasion" href="./comparison_page/items_comparison.html">Порівняння</a>
+        <a data-key="comparasion" href="./comparison_page/">Порівняння</a>
         <a data-key="list" href="#">Збірка</a>
       </div>
     </div>
@@ -108,6 +109,8 @@
   </div>
 
 
+  
+
 
   <section class="banner">
     <div class="section_container banner_container">
@@ -120,6 +123,83 @@
     </div>
   </section>
 
+  <section class="video-section">
+    <div class="container">
+  
+      <div class="video-container">
+        <div class="video-box">
+          <video autoplay muted loop>
+            <source src="video/drone_video.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section_container faq_container" id="faq">
+    <h2 class="section_header fade-in">FAQ</h2>
+    <div class="faq_grid fade-in">
+        <div class="faq_card">
+            <div class="faq_header">
+                <h4>Як обрати перший дрон для новачка?</h4>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="faq_content">
+                Для новачків рекомендується обирати дрони з функцією автопілота, невеликим розміром та простим управлінням. Важливо також звернути увагу на наявність запасних деталей.
+            </div>
+        </div>
+        <div class="faq_card">
+            <div class="faq_header">
+                <h4>Як доглядати за дроном?</h4>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="faq_content">
+                Регулярно очищуйте дрон від пилу, перевіряйте його пропелери та акумулятор. Зберігайте пристрій у сухому місці, далеко від прямого сонячного світла.
+            </div>
+        </div>
+        <div class="faq_card">
+            <div class="faq_header">
+                <h4>Яка максимальна відстань польоту у дронів?</h4>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="faq_content">
+                Відстань польоту залежить від моделі дрона. Бюджетні дрони зазвичай мають дальність 100-500 метрів, тоді як професійні моделі можуть долати до 8 км.
+            </div>
+        </div>
+        <div class="faq_card">
+            <div class="faq_header">
+                <h4>Чи можна літати дроном у місті?</h4>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="faq_content">
+                У більшості випадків польоти в межах міста обмежені законами. Обов'язково перевіряйте місцеві правила та уникайте зон із забороненим польотом, таких як аеропорти.
+            </div>
+        </div>
+        <div class="faq_card">
+            <div class="faq_header">
+                <h4>Скільки часу працює акумулятор дрона?</h4>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="faq_content">
+                Середній час польоту залежить від моделі та ємності акумулятора. Більшість дронів можуть літати 15-30 хвилин на одному заряді.
+            </div>
+        </div>
+        <div class="faq_card">
+            <div class="faq_header">
+                <h4>Який дрон підходить для зйомки відео?</h4>
+                <span><i class="ri-arrow-down-s-line"></i></span>
+            </div>
+            <div class="faq_content">
+                Для відеозйомки обирайте дрони з камерою високої якості, стабілізацією зображення та тривалою автономністю. Популярними є моделі серії DJI та Autel.
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+  
+
   </main>
   <footer>
     <div class="footer_container">
@@ -129,7 +209,7 @@
       <div class="footer_categories">
         <h3 data-key="footer_category" class="footer_categories_text">Категорії</h3>
         <ul>
-          <li><a href="./drones_page" data-key="drone">Дрони</a></li>
+          <li><a href="./drones_page/" data-key="drone">Дрони</a></li>
           <li><a href="#" data-key="components">Компоненти</a></li>
           <li><a href="./comparison_page/" data-key="comparasion">Порівняння</a></li>
           <li><a href="#" data-key="list">Збірка</a></li>
