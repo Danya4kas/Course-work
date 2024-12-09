@@ -82,8 +82,12 @@ async function createItemCard(drone) {
   const text = document.createElement("div");
   text.classList.add("text");
   const h6 = document.createElement("h6");
+
+  const params = getAddressParameters();
+  const outputItems = params.type ? params.type.toLowerCase() : "drones";
+
   const link = document.createElement("a");
-  link.href = `./item.html?id=${drone.id}&type="drones"`;
+  link.href = `./item.html?id=${drone.id}&type=${outputItems}`;
   link.textContent = drone.name;
   h6.appendChild(link);
   text.appendChild(h6);

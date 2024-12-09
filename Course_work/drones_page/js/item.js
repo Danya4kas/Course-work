@@ -1,16 +1,24 @@
 async function loadInfo() {
   const id = new URLSearchParams(window.location.search).get("id");
-  const type = new URLSearchParams(window.location.search).get("type");
 
-  const droneInfo = await fetch(`./items.json`).then((response) =>
+  const itemInfo = await fetch(`./items.json`).then((response) =>
     response.json()
   );
 
-  const drone = droneInfo.drones.find((drone) => drone.id == id);
-  console.log(drone);
-  if (drone) {
-    document.getElementById("title").innerHTML = drone.name;
-    document.getElementById("item-image").src = `./images/${drone.image}`;
+  const params = getAddressParameters();
+  const outputItems = params.type ? params.type.toLowerCase() : "drones";
+
+  const titleTag = document.getElementsByClassName("page_title")[0];
+  if (titleTag) {
+    titleTag.id = "lang-" + outputItems;
+  }
+
+  const currentItem = itemInfo[outputItems].find((item) => item.id == id);
+
+  console.log(currentItem);
+  if (currentItem) {
+    document.getElementById("title").innerHTML = currentItem.name;
+    document.getElementById("item-image").src = `./images/${currentItem.image}`;
   }
 
   const lang = getCurrentLanguage();
@@ -24,13 +32,16 @@ async function loadInfo() {
   if (priceText != null && document.getElementById("lang-price") != null) {
     document.getElementById("lang-price").innerHTML = priceText;
   }
-  document.getElementById("price").innerHTML = drone.price;
+  document.getElementById("price").innerHTML = currentItem.price;
   document.getElementById("lang-currency").innerHTML = currency;
 
   // characteristics
   const characteristics = document.getElementById("item-characteristics");
 
-  if (drone.characteristics == null || drone.characteristics.length == 0) {
+  if (
+    currentItem.characteristics == null ||
+    currentItem.characteristics.length == 0
+  ) {
     const row = document.createElement("tr");
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
@@ -43,8 +54,8 @@ async function loadInfo() {
     characteristics.appendChild(row);
   }
 
-  for (let i = 0; i < drone.characteristics.length; i++) {
-    const characteristic = drone.characteristics[i];
+  for (let i = 0; i < currentItem.characteristics.length; i++) {
+    const characteristic = currentItem.characteristics[i];
     const row = document.createElement("tr");
     const td1 = document.createElement("td");
     const tag = "lang-" + characteristic.title;
