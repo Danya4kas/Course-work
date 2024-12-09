@@ -24,7 +24,16 @@
     "antenna": "Антена (відео)",
     "battery": "Акумулятор",
     "noCharacteristics": "Немаї характеристик",
-    "antennas": "Антени"
+    "antennas": "Антени",
+    "transmitters": "Відеопередавачі",
+    "cameras": "Камери",
+    "condensators": "Конденсатори",
+    "controllers": "Контролери",
+    "frames": "Рами",
+    "pigtails": "Пігтейли",
+    "voopes": "Вупи",
+    "recievers": "Ресівери",
+    "equipment": "Обладнання"
   },
   "EN": {
     "language": "English",
@@ -51,6 +60,15 @@
     "antenna": "Antenna (video)",
     "battery": "Battery",
     "noCharacteristics": "No characteristics",
-    "antennas": "Antennas"
+    "antennas": "Antennas",
+    "transmitters": "Transmitters",
+    "cameras": "Cameras",
+    "condensators": "Condensators",
+    "controllers": "Controllers",
+    "frames": "Frames",
+    "pigtails": "Pigtails",
+    "voopes": "Voopes",
+    "recievers": "Recievers",
+    "equipment": "Equipment"
   }
 }
