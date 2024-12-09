@@ -197,7 +197,42 @@
       "price": 6572,
       "description": "Some info about RSvia-05",
       "image": "RSvia-02.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 7inch 295mm"
+        },
+        {
+          "title": "motors",
+          "description": "EMAX ECOII 2807 1300KV"
+        },
+        {
+          "title": "propellers",
+          "description": "HQprop HQ 7X4X3 7040",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH TANK MAX SOLO 5.8GHz 2.5W"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "antenna",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        }
+      ]
     },
     {
       "id": 6,
@@ -205,7 +240,46 @@
       "price": 10630,
       "description": "Some info about RSvia-06",
       "image": "RSvia-04.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 7inch 295mm"
+        },
+        {
+          "title": "motors",
+          "description": "EMAX ECOII 2807 1300KV"
+        },
+        {
+          "title": "propellers",
+          "description": "HQprop HQ 7X4X3 7040",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Night Eagle 3 V2"
+        },
+        {
+          "title": "antenna",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "battery",
+          "description": "6s2p Samsung 21700 8000 mah"
+        }
+      ]
     },
     {
       "id": 7,
@@ -213,7 +287,46 @@
       "price": 7802,
       "description": "Some info about RSvia-07",
       "image": "RSvia-01.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 7inch 295mm"
+        },
+        {
+          "title": "motors",
+          "description": "FlashHobby 2807 1300KV"
+        },
+        {
+          "title": "propellers",
+          "description": "HQprop HQ 7X4X3 7040",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "antenna",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "battery",
+          "description": "EVE INR21700-40P 4000mAh - 50A"
+        }
+      ]
     },
     {
       "id": 8,
@@ -221,7 +334,46 @@
       "price": 9213,
       "description": "Some info about RSvia-08",
       "image": "RSvia-02.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 55A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 10inch"
+        },
+        {
+          "title": "motors",
+          "description": "ReadyToSky 3115 900KV"
+        },
+        {
+          "title": "propellers",
+          "description": "HQProp 1050 10X5X3",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel PRO"
+        },
+        {
+          "title": "antenna",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "battery",
+          "description": "LiIon 6s2p Samsung 21700 8000 mah"
+        }
+      ]
     },
     {
       "id": 9,
@@ -229,7 +381,46 @@
       "price": 10319,
       "description": "Some info about RSvia-09",
       "image": "RSvia-04.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 v2 10inch"
+        },
+        {
+          "title": "motors",
+          "description": "ReadyToSky 3115 900KV"
+        },
+        {
+          "title": "propellers",
+          "description": "Gemfan 1050 10X5X3",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel PRO"
+        },
+        {
+          "title": "antenna",
+          "description": "Rush Cherry SMA-RHCP-160mm"
+        },
+        {
+          "title": "battery",
+          "description": "LiIon 6s2p Samsung 21700 8000 mah"
+        }
+      ]
     },
     {
       "id": 10,
@@ -237,7 +428,42 @@
       "price": 1306,
       "description": "Some info about RSvia-10",
       "image": "RSvia-01.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 7inch 295mm"
+        },
+        {
+          "title": "motors",
+          "description": "EMAX ECOII 2807 1300KV"
+        },
+        {
+          "title": "propellers",
+          "description": "HQprop HQ 7X4X3 7040",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "battery",
+          "description": "EVE INR21700-40P 4000mAh - 50A"
+        }
+      ]
     },
     {
       "id": 11,
@@ -245,7 +471,46 @@
       "price": 7431,
       "description": "Some info about RSvia-11",
       "image": "RSvia-02.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 Mark 4 7inch 295mm"
+        },
+        {
+          "title": "motors",
+          "description": "FlashHobby 2807 1300KV"
+        },
+        {
+          "title": "propellers",
+          "description": "HQprop HQ 7X4X3 7040",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel 2"
+        },
+        {
+          "title": "antenna",
+          "description": "SMA RHCP 123mm"
+        },
+        {
+          "title": "battery",
+          "description": "LiIon 6s2p Samsung 21700 8000 mah"
+        }
+      ]
     },
     {
       "id": 12,
@@ -253,7 +518,46 @@
       "price": 0,
       "description": "Some info about RSvia-12",
       "image": "RSvia-04.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 Mark 4 7inch 295mm"
+        },
+        {
+          "title": "motors",
+          "description": "FlashHobby 2807 1300KV"
+        },
+        {
+          "title": "propellers",
+          "description": "Gemfan 1050 10X5X3",
+          "amount": 2
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX"
+        },
+        {
+          "title": "receiver",
+          "description": "BAYCK ELRS 915MHz"
+        },
+        {
+          "title": "camera",
+          "description": "Night Eagle 3 V2"
+        },
+        {
+          "title": "antenna",
+          "description": "SMA RHCP 123mm"
+        },
+        {
+          "title": "battery",
+          "description": "LiIon 6s2p Samsung 21700 8000 mah"
+        }
+      ]
     }
   ]
 }
