@@ -1,83 +1,94 @@
-
-/* dark theme  */
-
+/* Dark Theme */
 body.dark_theme {
-    background-color: #3C3D37;
-    color: #ffffff;
+  background-color: #3c3d37;
+  color: #ffffff;
+
+  .nav_logo a {
+    color: white;
   }
-  
-  .dark_theme .nav_logo a {
-    color: white
+
+  .lang_button {
+    color: #121212;
   }
-  
-  .dark_theme .lang_button{
-    color:#121212;
-  }
-  
-  .dark_theme .span_lang{
+
+  .span_lang {
     color: #000000;
   }
-  
-  .dark_theme .exchange_rate  {
+
+  .exchange_rate {
     background-color: #838383;
   }
-  
-  .dark_theme .model_details p {
-    color: white;
-    font-weight: 700;
+
+  .model_details {
+    p {
+      color: white;
+      font-weight: 700;
+    }
+
+    h3 {
+      color: #ccc;
+      font-weight: 700;
+    }
   }
-  
-  .dark_theme .model_details h3 {
-    color: #ccc;
-    font-weight: 700;
-  }
-  
-  .dark_theme .component_text {
+
+  .component_text {
     color: #eee;
   }
-  
-  .dark_theme .dropdown_menu a{
+
+  .dropdown_menu {
+    a {
+      color: white;
+    }
+    background-color: #697565;
+  }
+
+  .left-section {
+    background-color: #697565;
+  }
+
+  header {
+    color: #1e201e;
+  }
+
+  .icons {
+    .dark_theme {
+      .logo a,
+      .nav-links a {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .search_bar {
+    input {
+      background-color: #444444;
+      color: #ffffff;
+      border: 1px solid #666666;
+    }
+  }
+
+  .section_header{
     color: white;
   }
-  .dark_theme .left-section {
-    background-color: #697565;
-  }
-  .dark_theme header {
-    color:#1E201E;
-  }
-  
-  .dark_theme .icons .dark_theme .logo a,
-  .dark_theme .nav-links a{
-    color: #ffffff;
-  }
-  
-  .dark_theme .search_bar input {
-    background-color: #444444;
-    color: #ffffff;
-    border: 1px solid #666666;
-  }
-  .dark_theme #search_item {
-    background-color: #81907C;
-   /* border: none; */
 
+  #search_item {
+    background-color: #81907c;
+    /* border: none; */
   }
-  .dark_theme .dropdown_menu{
-    background-color: #697565;
-  }
-  
-  .dark_theme .component_icon_hover{
+
+  .component_icon_hover {
     opacity: 1;
+
+    &:hover {
+      background-color: #444444;
+    }
   }
-  
-  .dark_theme .compomemt_icon_hover:hover{
-    background-color: #444444;
-  }
-  
-  .dark_theme .footer_text{
+
+  .footer_text {
     color: #ffffff;
   }
-  
-  .dark_theme .footer_bar {
+
+  .footer_bar {
     background-color: #3f3f3f;
   }
-  
+}
