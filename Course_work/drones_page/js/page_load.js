@@ -12,8 +12,8 @@ async function includeComponents() {
     .then((html) => {
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = html;
-      const lang = getCurrentLanguage();
-      setHeaderLang(lang);
+      // const lang = getCurrentLanguage();
+      // setHeaderLang(lang);
       return tempDiv.innerHTML;
     });
 
@@ -24,7 +24,13 @@ async function includeComponents() {
     .then((html) => {
       const tempDiv = document.createElement("div");
       tempDiv.innerHTML = html;
-      loadLanguage();
       return tempDiv.innerHTML;
     });
+
+  loadLanguage();
+  const params = getAddressParameters();
+  let outputItems = params.type ? params.type.toLowerCase() : "drones";
+  if (outputItems == "components") {
+    document.getElementById("components_types").classList.remove("hidden");
+  }
 }

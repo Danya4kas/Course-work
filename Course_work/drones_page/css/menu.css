@@ -30,8 +30,21 @@
 }
 
 .menu a {
-  line-height: 100px;
+  line-height: 70px;
   cursor: pointer;
   text-decoration: none;
   color: var(--text-color);
+}
+
+#components_types li {
+  height: 50px;
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  text-indent: 40px;
+}
+
+#components_types li a {
+  line-height: 50px;
 }

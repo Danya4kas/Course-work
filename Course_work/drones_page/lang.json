@@ -23,7 +23,8 @@
     "camera": "Камера",
     "antenna": "Антена (відео)",
     "battery": "Акумулятор",
-    "noCharacteristics": "Немаї характеристик"
+    "noCharacteristics": "Немаї характеристик",
+    "antennas": "Антени"
   },
   "EN": {
     "language": "English",
@@ -49,6 +50,7 @@
     "camera": "Camera",
     "antenna": "Antenna (video)",
     "battery": "Battery",
-    "noCharacteristics": "No characteristics"
+    "noCharacteristics": "No characteristics",
+    "antennas": "Antennas"
   }
 }

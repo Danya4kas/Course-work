@@ -10,8 +10,7 @@ async function loadPage() {
 
     const params = getAddressParameters();
 
-    let outputItems = "drones";
-    if (params.type) outputItems = params.type.toLowerCase();
+    let outputItems = params.type ? params.type.toLowerCase() : "drones";
 
     for (let i = 0; i < items[outputItems].length; i++) {
       const drone = items[outputItems][i];

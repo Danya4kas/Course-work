@@ -8,6 +8,10 @@ async function loadInfo() {
   const params = getAddressParameters();
   const outputItems = params.type ? params.type.toLowerCase() : "drones";
 
+  if (outputItems == "components") {
+    document.getElementById("components_types").classList.remove("hidden");
+  }
+
   const titleTag = document.getElementsByClassName("page_title")[0];
   if (titleTag) {
     titleTag.id = "lang-" + outputItems;
