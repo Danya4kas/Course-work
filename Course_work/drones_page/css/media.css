@@ -5,7 +5,7 @@
   }
 
   .logo {
-    display: none;
+    display: none !important;
   }
   .search {
     position: relative;

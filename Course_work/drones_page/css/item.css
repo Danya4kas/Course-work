@@ -2,7 +2,7 @@
   background-color: var(--background-white);
   height: calc(100vh - 100px);
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   gap: 40px;
 }
 
