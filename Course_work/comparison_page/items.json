@@ -5,7 +5,7 @@
       "name": "RSvia-01",
       "price": 13507,
       "description": "Some info about RSvia-01",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-01.jpg",
       "amount": 2,
       "characteristics": [
         {
@@ -51,7 +51,7 @@
       "name": "RSvia-02",
       "price": 13624,
       "description": "Some info about RSvia-02",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-02.jpg",
       "amount": 2,
       "characteristics": [
         {
@@ -98,7 +98,7 @@
       "name": "RSvia-03",
       "price": 11381,
       "description": "Some info about RSvia-03",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-04.jpg",
       "amount": 2,
       "characteristics": [
         {
@@ -145,7 +145,7 @@
       "name": "RSvia-04",
       "price": 6847,
       "description": "Some info about RSvia-04",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-01.jpg",
       "amount": 2
     },
     {
@@ -153,7 +153,7 @@
       "name": "RSvia-05",
       "price": 6572,
       "description": "Some info about RSvia-05",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-02.jpg",
       "amount": 2
     },
     {
@@ -161,7 +161,7 @@
       "name": "RSvia-06",
       "price": 10630,
       "description": "Some info about RSvia-06",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-04.jpg",
       "amount": 2
     },
     {
@@ -169,7 +169,7 @@
       "name": "RSvia-07",
       "price": 7802,
       "description": "Some info about RSvia-07",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-01.jpg",
       "amount": 2
     },
     {
@@ -177,7 +177,7 @@
       "name": "RSvia-08",
       "price": 9213,
       "description": "Some info about RSvia-08",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-02.jpg",
       "amount": 2
     },
     {
@@ -185,7 +185,7 @@
       "name": "RSvia-09",
       "price": 10319,
       "description": "Some info about RSvia-09",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-04.jpg",
       "amount": 2
     },
     {
@@ -193,7 +193,7 @@
       "name": "RSvia-10",
       "price": 1306,
       "description": "Some info about RSvia-10",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-01.jpg",
       "amount": 2
     },
     {
@@ -201,7 +201,7 @@
       "name": "RSvia-11",
       "price": 7431,
       "description": "Some info about RSvia-11",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-02.jpg",
       "amount": 2
     },
     {
@@ -209,7 +209,7 @@
       "name": "RSvia-12",
       "price": 0,
       "description": "Some info about RSvia-12",
-      "image": "./images/Rectangle 16.png",
+      "image": "RSvia-04.jpg",
       "amount": 2
     }
   ]
