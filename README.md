@@ -13,7 +13,7 @@ https://danya4kas.github.io/Course-work/Course_work/drone
 
  Team members:
  
- Daniil Mosiychuk - Frontend/Backend
+ Daniil Mosiychuk - Frontend/React
  
  Dmytro Shot - Frontend
  
