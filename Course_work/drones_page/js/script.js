@@ -18,7 +18,7 @@ async function loadPage() {
 }
 
 async function createDroneCard(drone) {
-  const lang = getCurrentLanguage();
+  const lang = getCurrentLanguage().toUpperCase();
   const language = await fetch(`./lang.json`).then((response) =>
     response.json()
   );
