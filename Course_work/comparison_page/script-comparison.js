@@ -1,5 +1,5 @@
 async function get_products(){
-    let response = await fetch("items.json");
+    let response = await fetch("/Course-work/Course_work/drones_page/items.json");
     let products = await response.json();
 
     checkTheme()
@@ -73,7 +73,7 @@ async function get_products(){
         
         
     }
-    console.log()
+    
     function show_sections(){
         
         
