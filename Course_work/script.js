@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   function changeLanguage(lang) {
-    localStorage.setItem("language", lang);
+    localStorage.setItem("lang", lang);
     translatableElements.forEach((element) => {
       const key = element.getAttribute("data-key");
       if (translations[lang][key]) {
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const savedLanguage = localStorage.getItem("language") || "ua";
+  const savedLanguage = localStorage.getItem("lang") || "ua";
   changeLanguage(savedLanguage);
 });
 
