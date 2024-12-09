@@ -20,9 +20,7 @@ footer {
     font-weight: bold;
   }
 
-  .footer_contacts{
-  }
-  
+
   .footer_categories, .footer_contacts, .footer_socials {
     flex: 1;
     min-width: 200px;

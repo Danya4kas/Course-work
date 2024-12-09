@@ -1,25 +1,14 @@
 // dark theme
 document.getElementById("theme-toggle-sun").addEventListener("click", function () {
-
   document.body.classList.toggle("dark_theme");
-  
   const themeIcon = this.querySelector("i");
 
   if (document.body.classList.contains("dark_theme")) {
     themeIcon.classList.replace("bx-sun", "bx-moon");
-    localStorage.setItem("theme","dark")
   } else {
     themeIcon.classList.replace("bx-moon", "bx-sun");
-    localStorage.setItem("theme","light")
   }
 });
-
-window.onload=Onload()
-function Onload(){
-  if(localStorage.getItem("theme")=="dark"){
-    document.body.classList.toggle("dark_theme");
-  }
-}
 
 
 // language
@@ -155,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   function changeLanguage(lang) {
-    localStorage.setItem("lang", lang);
+    localStorage.setItem("language", lang);
     translatableElements.forEach((element) => {
       const key = element.getAttribute("data-key");
       if (translations[lang][key]) {
@@ -192,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  const savedLanguage = localStorage.getItem("lang") || "ua";
+  const savedLanguage = localStorage.getItem("language") || "ua";
   changeLanguage(savedLanguage);
 });
 
@@ -251,11 +240,9 @@ document.addEventListener("DOMContentLoaded", function () {
   startSlideInterval();
 });
 
-
-// currency
 const exchangeRateElement = document.getElementById("exchangeRate");
 const apiKey = "12494d57b16409579143429c";
-const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
+const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`; 
 
 function updateExchangeRate() {
   fetch(url)
@@ -266,9 +253,8 @@ function updateExchangeRate() {
         exchangeRateElement.textContent = `USD/UAH: ${uahRate.toFixed(2)} грн`;
       }
     })
-    .catch((error) => {
-      console.error("Error fetching exchange rate:", error);
-    });
+ 
 }
+
 updateExchangeRate();
-setInterval(updateExchangeRate, 600000);
+setInterval(updateExchangeRate, 600000);  

@@ -36,6 +36,9 @@ body.dark_theme {
     color: #eee;
   }
   
+  .dark_theme .dropdown_menu a{
+    color: white;
+  }
   
   .dark_theme header {
     color:#1E201E;
