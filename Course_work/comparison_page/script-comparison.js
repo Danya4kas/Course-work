@@ -17,7 +17,7 @@ async function get_products(){
         let characteristics = document.getElementById("characteristics")
         ids_arr=new URLSearchParams(window.location.search).get("ids").split(',');
 
-        let keys=Object.keys(info[data_arr[0]])
+        let keys=Object.keys(info[data_arr[0]-1])
 
         keys.splice(keys.indexOf("image"),1)
         keys.splice(keys.indexOf("id"),1)
