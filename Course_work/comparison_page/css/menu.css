@@ -28,7 +28,7 @@
 }
 
 .menu a {
-  color: #ffffff;
+  color: var(--text-color);
   list-style-type: none;
   text-decoration: none;
   line-height: 100px;
