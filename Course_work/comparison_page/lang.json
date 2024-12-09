@@ -1,10 +1,11 @@
 {
   "ua": {
     "drones":"Дрони",
+    "drones:":"Дрони: ",
     "components": "Компоненти",
     "comparison": "Порівняння",
     "assembly": "Збірка",
-    "compare":"Порівняти",
+    "compare":"Порівняти:",
     "clear":"Очистити",
     "empty-message":"Поки тут немає дронів для порівняння",
     "characteristics":"Характеристики",
@@ -23,10 +24,11 @@
   },
   "en": {
     "drones": "Drones",
+    "drones:": "Drones: ",
     "components": "Components",
     "comparison": "Comparison",
     "assembly": "Assembly",
-    "compare":"Сompare",
+    "compare":"Сompare:",
     "clear":"Clear",
     "empty-message":"So far, there are no drones to compare",
     "characteristics":"Characteristics",
