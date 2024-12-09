@@ -28,5 +28,8 @@
 }
 
 .menu a {
+  color: #ffffff;
+  list-style-type: none;
+  text-decoration: none;
   line-height: 100px;
 }
