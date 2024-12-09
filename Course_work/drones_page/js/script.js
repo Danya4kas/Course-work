@@ -155,10 +155,20 @@ async function sort() {
     }
   });
 
+  const params = getAddressParameters();
+
+  let page = params.page ? params.page : 1;
+  const maxItemsPerPage = 6;
+
   document.querySelector(".drones").innerHTML = "";
-  sortedDrones.forEach((drone) => {
+  for (
+    let i = (page - 1) * maxItemsPerPage;
+    i < Math.min(page * maxItemsPerPage, sortedDrones.length);
+    i++
+  ) {
+    const drone = sortedDrones[i];
     createItemCard(drone);
-  });
+  }
 }
 
 function getCurrentLanguage() {
