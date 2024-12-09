@@ -13,13 +13,13 @@ https://danya4kas.github.io/Course-work/Course_work/drone
 
  Team members:
  
- Daniil Mosiychuk 
+ Daniil Mosiychuk - Fullstack
  
- Dmytro Shot - frontend
+ Dmytro Shot - Frontend
  
- Anna Bychyshyn - designer
+ Anna Bychyshyn - Designer
  
- Kateryna Shapovalova - frontend
+ Kateryna Shapovalova - Frontend
 
 
 ------------------------------------------ 
