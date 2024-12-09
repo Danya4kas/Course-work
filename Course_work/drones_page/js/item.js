@@ -58,10 +58,3 @@ async function loadInfo() {
 
 window.addEventListener("load", loadInfo);
 
-// const drone = droneInfo.drones.find((drone) => drone.id == id);
-//   console.log(drone);
-//   if (drone){
-//     document.getElementById("title").innerHTML = drone.name;
-
-//     document.getElementById("item_image").src = "./images/" + drone.image;
-//   }
