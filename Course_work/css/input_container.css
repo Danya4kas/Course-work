@@ -1,0 +1,77 @@
+.search-container {
+    position: relative;
+    width: 100%;
+}
+
+#search_item {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 16px;
+}
+
+#dropdown_list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: #f9f9f9;
+}
+
+.dropdown-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    font-family: Poppins;
+}
+
+.item-price {
+    font-size: 14px;
+    color: #555;
+    font-family: Poppins;
+}
+
+
+.hidden {
+    display: none;
+}

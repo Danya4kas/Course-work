@@ -267,6 +267,27 @@ faqCards.forEach(card => {
 });
 
 
+const searchInput = document.getElementById('search_item');
+const dropdownList = document.getElementById('dropdown_list');
+const items = document.querySelectorAll('.dropdown-item');
+
+searchInput.addEventListener('focus', () => {
+    dropdownList.classList.remove('hidden');
+});
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.search-container')) {
+        dropdownList.classList.add('hidden');
+    }
+});
+
+
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        const link = item.getAttribute('data-link'); 
+        window.location.href = link; 
+    });
+});
 
 
 
