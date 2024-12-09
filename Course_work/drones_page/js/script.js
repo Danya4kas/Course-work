@@ -11,8 +11,16 @@ async function loadPage() {
     const params = getAddressParameters();
 
     let outputItems = params.type ? params.type.toLowerCase() : "drones";
-
-    for (let i = 0; i < items[outputItems].length; i++) {
+    let page = params.page ? params.page : 1;
+    const maxItemsPerPage = 6;
+    let pages = Math.ceil(items[outputItems].length / maxItemsPerPage);
+    drawPagination(pages, page);
+    document.querySelector(".drones").innerHTML = "";
+    for (
+      let i = (page - 1) * maxItemsPerPage;
+      i < Math.min(page * maxItemsPerPage, items[outputItems].length);
+      i++
+    ) {
       const drone = items[outputItems][i];
       createItemCard(drone);
     }
@@ -21,7 +29,7 @@ async function loadPage() {
   await loadLanguage();
 }
 
-async function createItemCard(drone) {
+async function createItemCard(item) {
   const lang = getCurrentLanguage().toUpperCase();
   const language = await fetch(`./lang.json`).then((response) =>
     response.json()
@@ -31,23 +39,23 @@ async function createItemCard(drone) {
   const currency = data.currency;
   const amountText = data.amount;
 
-  const droneCard = document.createElement("div");
-  droneCard.classList.add("drone-card");
+  const itemCard = document.createElement("div");
+  itemCard.classList.add("drone-card");
   const images = document.createElement("div");
   images.classList.add("images");
   const mainImage = document.createElement("img");
   mainImage.classList.add("main-image");
-  mainImage.src = `./images/${drone.image}`;
+  mainImage.src = `./images/${item.image}`;
   images.appendChild(mainImage);
   const topRightImages = document.createElement("div");
   topRightImages.classList.add("top-right-images");
-  const droneLink = document.createElement("a");
-  droneLink.href = "#";
-  topRightImages.appendChild(droneLink);
-  const droneImage = document.createElement("img");
-  droneImage.classList.add("drone");
-  droneImage.src = "./icons/screw-driver.svg";
-  droneLink.appendChild(droneImage);
+  const itemLink = document.createElement("a");
+  itemLink.href = "#";
+  topRightImages.appendChild(itemLink);
+  const itemImage = document.createElement("img");
+  itemImage.classList.add("drone");
+  itemImage.src = "./icons/screw-driver.svg";
+  itemLink.appendChild(itemImage);
   // <a><img class="compare" src="./icons/compare.svg" /></a>
   const compareLink = document.createElement("a");
   compareLink.href = "#";
@@ -61,11 +69,11 @@ async function createItemCard(drone) {
     if (ids) {
       if (ids.split(",").length > 1) {
         alert("Comparison is full");
-      } else if (!ids.split(",").includes(drone.id + "")) {
-        localStorage["selected_ids"] += "," + drone.id;
+      } else if (!ids.split(",").includes(item.id + "")) {
+        localStorage["selected_ids"] += "," + item.id;
       }
     } else {
-      localStorage["selected_ids"] = drone.id;
+      localStorage["selected_ids"] = item.id;
     }
   };
   compareLink.appendChild(compareImage);
@@ -86,8 +94,8 @@ async function createItemCard(drone) {
   const outputItems = params.type ? params.type.toLowerCase() : "drones";
 
   const link = document.createElement("a");
-  link.href = `./item.html?id=${drone.id}&type=${outputItems}`;
-  link.textContent = drone.name;
+  link.href = `./item.html?id=${item.id}&type=${outputItems}`;
+  link.textContent = item.name;
   h6.appendChild(link);
   text.appendChild(h6);
   const info = document.createElement("div");
@@ -96,21 +104,40 @@ async function createItemCard(drone) {
   const currencySpan = document.createElement("span");
   currencySpan.id = "lang-currency";
   currencySpan.textContent = currency;
-  price.textContent = `${drone.price} `;
+  price.textContent = `${item.price} `;
   price.appendChild(currencySpan);
   info.appendChild(price);
   const amount = document.createElement("p");
-  amount.textContent = `${drone.amount} `;
+  amount.textContent = `${item.amount} `;
   const amountSpan = document.createElement("span");
   amountSpan.id = "lang-amount";
   amountSpan.textContent = amountText;
   amount.appendChild(amountSpan);
   info.appendChild(amount);
   text.appendChild(info);
-  droneCard.appendChild(images);
-  droneCard.appendChild(text);
-  document.querySelector(".drones").appendChild(droneCard);
-  console.log("Drones:" + document.querySelector(".drones"));
+  itemCard.appendChild(images);
+  itemCard.appendChild(text);
+  document.querySelector(".drones").appendChild(itemCard);
+}
+
+function drawPagination(pages, page) {
+  const pagination = document.getElementsByClassName("pagination")[0];
+  pagination.innerHTML = "";
+
+  for (let i = 1; i <= pages; i++) {
+    const button = document.createElement("button");
+    button.textContent = i;
+    button.onclick = () => {
+      const url = new URL(window.location.href);
+      url.searchParams.set("page", i);
+      window.history.pushState({}, "", url);
+      loadPage(i);
+    };
+    if (i === parseInt(page)) {
+      button.classList.add("active");
+    }
+    pagination.appendChild(button);
+  }
 }
 
 async function sort() {

@@ -177,3 +177,24 @@ main {
 .hidden {
   display: none;
 }
+
+.pagination {
+}
+
+.pagination button {
+  margin: 20px;
+  border: 1px solid var(--light-gray);
+  background-color: var(--light-gray);
+  text-align: center;
+  height: 40px;
+  color: var(--text-color);
+  font-size: 24px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: var(--dark-gray);
+  color: var(--white);
+}
