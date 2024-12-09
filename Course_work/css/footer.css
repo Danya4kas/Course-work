@@ -1,0 +1,122 @@
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px;
+  }
+  
+  .footer_container {
+    display: flex;
+    gap: 97px;
+    max-width: 1200px;
+    margin-bottom: 20px; 
+  }
+  
+  .footer_logo h1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .footer_contacts{
+  }
+  
+  .footer_categories, .footer_contacts, .footer_socials {
+    flex: 1;
+    min-width: 200px;
+  }
+  .footer_categories_text, .footer_contacts_text{
+  padding-bottom: 13px;
+  }
+  .footer_categories ul, .footer_contacts ul {
+    padding: 0;
+  }
+  
+  .footer_categories ul li, .footer_contacts ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer_categories a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  .footer_categories a:hover{
+    cursor: pointer;
+    color: #818181;
+  }
+  .footer_contacts li:hover{
+    cursor: pointer;
+    color: #818181;
+  }
+  
+  
+  .footer_categories a:hover {
+    color: #ffffff;
+  }
+  
+  .footer_contacts i {
+    margin-right: 10px;
+  }
+  
+  .footer_socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+
+  .social_icons{
+    margin-right: 9rem;
+  }
+  
+  
+  .social_icon {
+    font-size: 2rem;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social_icon:hover {
+    color: #818181;
+  }
+  
+  .footer_bottom {
+    background-color: #282828;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer_bottom p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #bbb;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer_logo h1 a {
+      font-size: 1.8rem;
+    }
+  
+    .footer_categories, .footer_contacts, .footer_socials {
+      text-align: center;
+    }
+    
+    .footer_socials {
+      margin-top: 20px;
+    }
+  
+    .footer_categories ul li, .footer_contacts ul li {
+      font-size: 1.1rem;
+    }
+  }
+  
