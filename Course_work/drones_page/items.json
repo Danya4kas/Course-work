@@ -146,7 +146,50 @@
       "price": 6847,
       "description": "Some info about RSvia-04",
       "image": "RSvia-01.jpg",
-      "amount": 2
+      "amount": 2,
+      "characteristics": [
+        {
+          "title": "controller",
+          "description": "SpeedyBee F405 V3 50A",
+          "price": "1425"
+        },
+        {
+          "title": "frame",
+          "description": "Mark4 7inch 295mm",
+          "price": "344"
+        },
+        {
+          "title": "motors",
+          "description": "EMAX ECOII 2807 1300KV",
+          "price": "2008"
+        },
+        {
+          "title": "propellers",
+          "description": "HQprop 7040 7X4X3",
+          "amount": 2,
+          "price": "259"
+        },
+        {
+          "title": "transmitter",
+          "description": "RUSH TANK MAX SOLO 5.8GHz 2.5W",
+          "price": "1603"
+        },
+        {
+          "title": "receiver",
+          "description": "BHappyModel ES900RX 915MHz 1PC 915Mhz RX",
+          "price": "222"
+        },
+        {
+          "title": "camera",
+          "description": "Caddx Ratel 2",
+          "price": "726"
+        },
+        {
+          "title": "antenna",
+          "description": "Rush Cherry SMA-RHCP-160mm",
+          "price": "260"
+        }
+      ]
     },
     {
       "id": 5,
