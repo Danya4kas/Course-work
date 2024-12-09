@@ -15,11 +15,11 @@ https://danya4kas.github.io/Course-work/Course_work/drone
  
  Daniil Mosiychuk 
  
- Dmytro Shot
+ Dmytro Shot - frontend
  
- Anna Bychyshyn
+ Anna Bychyshyn - designer
  
- Kateryna Shapovalova
+ Kateryna Shapovalova - frontend
 
 
 ------------------------------------------ 
