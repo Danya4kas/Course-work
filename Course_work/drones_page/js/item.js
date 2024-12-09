@@ -21,7 +21,9 @@ async function loadInfo() {
   const data = language[lang];
   const currency = data.currency;
   const priceText = data.price;
-  document.getElementById("lang-price").innerHTML = priceText;
+  if (priceText != null && document.getElementById("lang-price") != null) {
+    document.getElementById("lang-price").innerHTML = priceText;
+  }
   document.getElementById("price").innerHTML = drone.price;
   document.getElementById("lang-currency").innerHTML = currency;
 

@@ -4,20 +4,25 @@ async function loadPage() {
   const page = document.getElementById("index_page");
 
   if (page) {
-    const drones = await fetch("./items.json").then((response) =>
+    const items = await fetch("./items.json").then((response) =>
       response.json()
     );
 
-    for (let i = 0; i < drones.drones.length; i++) {
-      const drone = drones.drones[i];
-      createDroneCard(drone);
+    const params = getAddressParameters();
+
+    let outputItems = "drones";
+    if (params.type) outputItems = params.type.toLowerCase();
+
+    for (let i = 0; i < items[outputItems].length; i++) {
+      const drone = items[outputItems][i];
+      createItemCard(drone);
     }
   }
 
   await loadLanguage();
 }
 
-async function createDroneCard(drone) {
+async function createItemCard(drone) {
   const lang = getCurrentLanguage().toUpperCase();
   const language = await fetch(`./lang.json`).then((response) =>
     response.json()
@@ -51,21 +56,19 @@ async function createDroneCard(drone) {
   const compareImage = document.createElement("img");
   compareImage.classList.add("compare");
   compareImage.src = "./icons/compare.svg";
-    //my code
-    compareLink.onclick=() => {
-      let ids = localStorage["selected_ids"]
-      if(ids){
-        if(ids.split(",").length>1){
-          alert("Comparison is full")
-        }
-        else if(!ids.split(",").includes(drone.id+"")){
-          localStorage["selected_ids"]+=","+drone.id
-        }
-        
+  //my code
+  compareLink.onclick = () => {
+    let ids = localStorage["selected_ids"];
+    if (ids) {
+      if (ids.split(",").length > 1) {
+        alert("Comparison is full");
+      } else if (!ids.split(",").includes(drone.id + "")) {
+        localStorage["selected_ids"] += "," + drone.id;
       }
-      else{localStorage["selected_ids"]=drone.id}
-    
+    } else {
+      localStorage["selected_ids"] = drone.id;
     }
+  };
   compareLink.appendChild(compareImage);
   // <a><img class="add_to_analitic" src="./icons/plus.svg" /></a>
   const addLink = document.createElement("a");
@@ -124,7 +127,7 @@ async function sort() {
 
   document.querySelector(".drones").innerHTML = "";
   sortedDrones.forEach((drone) => {
-    createDroneCard(drone);
+    createItemCard(drone);
   });
 }
 

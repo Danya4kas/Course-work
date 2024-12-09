@@ -8,76 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>drons</title>
 
-    <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script>
-      $(function () {
-        const lang = getCurrentLanguage();
-        setHeaderLang(lang);
-        loadLanguage();
-      });
-    </script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/page_load.js"></script>
 
-
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <script src="js/search.js"></script>
-    <script src="js/item.js"></script> 
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
 
   <body id="index_page">
     <!-- HEADER -->
-    <header>
-      <div class="logo">
-      <img id="menu" src="./icons/menu.svg" />
-      <h1 class="name">
-        <a href="/Course-work/Course_work/drone">DRONO-DROME</a>
-      </h1>
-    </div>
-    <div class="searchWithRes">
-      <div class="search">
-        <input
-          type="text"
-          oninput="makeSearch(this, this.value )"
-          id="searchField" />
-        <img src="./icons/finder.svg" />
-      </div>
-      <div id="searchResults">
-        <ul id="searchResultsList"></ul>
-      </div>
-    </div>
-    <ul>
-      <li><img id="analitica" src="./icons/analitica.svg" /></li>
-      <li>
-        <img
-          id="light_theme"
-          src="./icons/light_theme.svg"
-          onclick="changeTheme()" />
-      </li>
-      <li>
-        <select id="language" onchange="changeLanguage()">
-          <option selected>UA</option>
-          <option>EN</option>
-        </select>
-      </li>
-    </ul>
-    </header>
+    <header id="header"></header>
 
     <!-- MAIN -->
     <main>
-      <aside class="menu">
-        <ul>
-          <li class="lato-regular"><a id="lang-drones">Дрони</a></li>
-          <li class="lato-regular"><a id="lang-components">Компоненти</a></li>
-          <li class="lato-regular"><a href="/Course-work/Course_work/comparison_page/items_comparison.html" id="lang-comparison">Порівняння</a></li>
-          <li class="lato-regular"><a id="lang-assembly">Збірка</a></li>
-        </ul>
-      </aside>
+      <aside class="menu" id="navigation"></aside>
 
       <!-- CONTENT -->
       <div class="content">
@@ -97,9 +49,7 @@
             </option>
           </select>
         </div>
-        <div class="drones">
-      
-        </div>
+        <div class="drones"></div>
       </div>
     </main>
   </body>

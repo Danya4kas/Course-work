@@ -1,4 +1,14 @@
 {
+  "components": [
+    {
+      "id": 1,
+      "name": "SpeedyBee F405 V3 50A",
+      "category": "controller",
+      "price": 1900,
+      "image": "SpeedyBee F405 V3 50A.png",
+      "amount": 1
+    }
+  ],
   "drones": [
     {
       "id": 1,

@@ -5,25 +5,11 @@
     </style>
     <meta charset="UTF-8" />
     <title>Drone</title>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"></script>
 
     <script src="./js/script.js"></script>
     <script src="./js/item.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("./components/header.html", function () {
-          const lang = getCurrentLanguage();
-          setHeaderLang(lang);
-        });
-        $("#navigation").load("./components/menu.html", function () {
-          const lang = getCurrentLanguage();
-          loadLanguage();
-        });
-      });
-    </script>
+    <script src="./js/page_load.js"></script>
+
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/item.css" />
