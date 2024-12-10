@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRONO-DROME</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon_icon.png">
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      const lang = getCurrentLanguage();
+      setHeaderLang(lang);
+      loadLanguage();
+    });
+  </script>
+
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="js/search.js"></script>
+  <script src="js/item.js"></script>
+</head>
+
+<body id="index_page">
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img id="menu" src="./icons/menu.svg" />
+      <h1 class="name">
+        <a href="/Course-work/Course_work/drone">DRONO-DROME</a>
+      </h1>
+    </div>
+    <div class="searchWithRes">
+      <div class="search">
+        <input type="text" oninput="makeSearch(this, this.value )" id="searchField" />
+        <img src="./icons/finder.svg" />
+      </div>
+      <div id="searchResults">
+        <ul id="searchResultsList"></ul>
+      </div>
+    </div>
+    <ul>
+      <li><img id="analitica" src="./icons/analitica.svg" /></li>
+      <li>
+        <img id="light_theme" src="./icons/light_theme.svg" onclick="changeTheme()" />
+      </li>
+      <li>
+        <select id="language" onchange="changeLanguage()">
+          <option selected>UA</option>
+          <option>EN</option>
+        </select>
+      </li>
+    </ul>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <aside class="menu">
+      <ul>
+        <li class="lato-regular"><a href="./drones_page/ id="lang-drones">Дрони</></li>
+        <li class="lato-regular"><a href="./components_page/" id="lang-components">Компоненти</a></li>
+        <li class="lato-regular"><a href="./comporasion_page/"
+            id="lang-comparison">Порівняння</a></li>
+        <li class="lato-regular"><a href="./assembly_page/" id="lang-assembly">Збірка</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="recently_block">
+        <h1 class="recently_add">Нещодавно додане в аналітику:</h1>
+      </div>
+
+
+      <div class="recently_block">
+        <div class="statistic_model">
+          <div class="img_block">
+            <img class="statistic_img" src="images/RSvia-01.jpg" alt="RS-via 12" />
+          </div>
+          <div class="info_block">
+            <h3 class="model_name">RS-via 12</h3>
+            <p>Залишок: 2 шт</p>
+            <p>Ціна: 500грн</p>
+            <p>Курс: 41 грн</p>
+            <p>Промокод: нема</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="report_block">
+        <!-- <button class="report_btn">Звіт</button> -->
+        <div class="report_block">
+          <p class="report_text">Загальна сума за цей період: 10000грн</p>
+          <p class="report_text">Придбано компонентів: 15шт</p>
+        </div>
+      <div class="options_block">
+        <div class="sort">
+          <select class="lato-light" name="sort" id="sort" onchange="sort()">
+            <option class="lato-light" value="week">За популярністю</option>
+            <option class="lato-light" value="month">Найпопулярніші</option>
+            <option class="lato-light" value="year">Найменш попялярні</option>
+          </select>
+        </div>
+        <div class="sort">
+          <select class="lato-light" name="sort" id="sort" onchange="sort()">
+            <option class="lato-light" value="week">За датою</option>
+            <option class="lato-light" value="month">Раніше додані</option>
+            <option class="lato-light" value="year">Пізніше додані</option>
+          </select>
+        </div>
+        <div class="sort">
+          <select class="lato-light" name="sort" id="sort" onchange="sort()">
+            <option class="lato-light" value="week">За Кількістю</option>
+            <option class="lato-light" value="month">Найбільша кількість</option>
+            <option class="lato-light" value="year">Найменша кількість</option>
+          </select>
+        </div>
+
+        </div>
+      </div>
+
+   
+      
+      <table class="statistics_table" id="droneTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Дата</th>
+            <th>Дрон</th>
+            <th>Ціна</th>
+            <th>Залишок</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>02.10.2024</td>
+            <td>RSvia-01</td>
+            <td>13,507 грн</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>05.10.2024</td>
+            <td>RSvia-02</td>
+            <td>13,624 грн</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>12.10.2024</td>
+            <td>RSvia-03</td>
+            <td>11,381 грн</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>17.10.2024</td>
+            <td>RSvia-04</td>
+            <td>6,847 грн</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>25.10.2024</td>
+            <td>RSvia-05</td>
+            <td>6,572 грн</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>30.10.2024</td>
+            <td>RSvia-06</td>
+            <td>10,630 грн</td>
+            <td>6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>01.11.2024</td>
+            <td>RSvia-07</td>
+            <td>7,802 грн</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>07.11.2024</td>
+            <td>RSvia-08</td>
+            <td>9,213 грн</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>14.11.2024</td>
+            <td>RSvia-09</td>
+            <td>10,319 грн</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>20.11.2024</td>
+            <td>RSvia-10</td>
+            <td>1,306 грн</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>24.11.2024</td>
+            <td>RSvia-11</td>
+            <td>7,431 грн</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>01.12.2024</td>
+            <td>RSvia-12</td>
+            <td>1500 грн</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="recently_block">
+        <h1 class="recently_add">Найчастіше серед компонентів:</h1>
+      </div>
+
+    
+      <div class="grid_container">
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/antenna_category.png" alt="Антени">
+            <span>19 шт</span>
+            <h3>Антени</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/video_transmitter_category.png" alt="Відеопередавачі">
+            <span>16 шт</span>
+            <h3>Відеопередавачі</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/camera_category.png" alt="Камери">
+            <span>20 шт</span>
+            <h3>Камери</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/capacitor_category.png" alt="Конденсатори">
+            <span>14 шт</span>
+            <h3>Конденсатори</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/controller_category.png" alt="Контролери">
+            <span>22 шт</span>
+            <h3>Контролери</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/motor_category.png" alt="Мотори">
+            <span>18 шт</span>
+            <h3>Мотори</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/propeller_category.png" alt="Пропеллери">
+            <span>23 шт</span>
+            <h3>Пропеллери</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/frame_category.png" alt="Рами">
+            <span>15 шт</span>
+            <h3>Рами</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/pigtails_category.png" alt="Пігтейли">
+            <span>19 шт</span>
+            <h3>Пігтейли</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/whoops_category.png" alt="Вупи">
+            <span>25 шт</span>
+            <h3>Вупи</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/receivers_category.png" alt="Ресівери">
+            <span>20 шт</span>
+            <h3>Ресівери</h3>
+          </div>
+        </div>
+      
+        <div class="grid_item">
+          <div class="item_content">
+            <img src="images/equipment_category.png" alt="Обладнання">
+            <span>27 шт</span>
+            <h3>Обладнання</h3>
+          </div>
+        </div>
+      </div>
+      
+      
+</body>
+<script src="js/script.js"></script>
+</html>

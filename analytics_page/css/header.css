@@ -1,0 +1,142 @@
+header img {
+  height: 40px;
+}
+
+#menu {
+  height: 40px;
+  cursor: pointer;
+}
+
+#menu:hover {
+  background-color: var(--gray-focus);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.name {
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 58px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.name a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.searchWithRes {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.searchWithRes #searchResults {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: var(--light-gray);
+  opacity: 0.8;
+  width: 100%;
+  top: 50%;
+  z-index: -1;
+  padding-top: 50px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+}
+
+.searchWithRes #searchResults ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+  width: 100%;
+}
+
+.searchWithRes #searchResults ul a {
+  font-family: var(--font-main);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--dark-gray);
+}
+
+#searchResults a:hover {
+  background-color: #7a7a7e;
+  opacity: 1;
+  color: var(--white);
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  font-family: var(--font-main);
+  font-size: 30px;
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  border-radius: 30px;
+  width: 600px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+
+.search img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 20px;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+header ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li:hover {
+  cursor: pointer;
+  background-color: var(--gray-focus);
+}
+
+#language {
+  line-height: 40px;
+  font-family: var(--font-main);
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+}
+
+#language option {
+  background-color: var(--dark-gray);
+  text-align: center;
+}

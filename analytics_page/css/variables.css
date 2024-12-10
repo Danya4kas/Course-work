@@ -1,0 +1,21 @@
+:root {
+  --font-main: "Alumni Sans", sans-serif;
+  --white: #ffffff;
+  --text-color: #464649;
+  --background-white: #ffffff;
+  --light-gray: #d9d9d9;
+  --dark-gray: #464649;
+  --gray-focus: #7a7a7e;
+}
+
+.dark-theme {
+  --background-white: #3c3d37;
+  --light-gray: #81907c;
+  --dark-gray: #1e201e;
+  --gray-focus: #81907c;
+  --text-color: #ffffff;
+  h1,h3, p, td{
+    color:#D9D9D9
+  }
+}
+
