@@ -218,7 +218,8 @@ function changeLanguage() {
 
 function checkTheme() {
   const theme = localStorage.getItem("theme");
-  if (theme === "dark") {
+
+  if (theme === "dark" && !body.classList.contains("dark-theme")) {
     changeTheme();
   }
 }
