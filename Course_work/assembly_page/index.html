@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRONO-DROME</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon_icon.png">
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      const lang = getCurrentLanguage();
+      setHeaderLang(lang);
+      loadLanguage();
+    });
+  </script>
+
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/assembly.css">
+  <script src="js/search.js"></script>
+  <script src="js/item.js"></script>
+</head>
+
+<body id="index_page">
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img id="menu" src="./icons/menu.svg" />
+      <h1 class="name">
+        <a href="drone.html">DRONO-DROME</a>
+      </h1>
+    </div>
+    <div class="searchWithRes">
+      <div class="search">
+        <input type="text" oninput="makeSearch(this, this.value )" id="searchField" />
+        <img src="./icons/finder.svg" />
+      </div>
+      <div id="searchResults">
+        <ul id="searchResultsList"></ul>
+      </div>
+    </div>
+    <ul>
+      <li><img id="analitica" src="./icons/analitica.svg" /></li>
+      <li>
+        <img id="light_theme" src="./icons/light_theme.svg" onclick="changeTheme()" />
+      </li>
+      <li>
+        <select id="language" onchange="changeLanguage()">
+          <option selected>UA</option>
+          <option>EN</option>
+        </select>
+      </li>
+    </ul>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <aside class="menu">
+      <ul>
+        <li class="lato-regular"><a href="./drones_page/ id="lang-drones">Дрони</></li>
+          <li class="lato-regular"><a href="./components_page/" id="lang-components">Компоненти</a></li>
+          <li class="lato-regular"><a href="./comporasion_page/"
+              id="lang-comparison">Порівняння</a></li>
+          <li class="lato-regular"><a href="./assembly_page/" id="lang-assembly">Збірка</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <div class="content">
+      <div class="recently_block">
+     
+      </div>
+
+
+    
+
+      <div class="grid_container">
+     
+        <div class="grid_item" data-category="Мотори">
+          <img src="images/motor_category.png" alt="Мотори">
+          <h3>Мотори</h3>
+        </div>
+        <div class="grid_item" data-category="Антени">
+          <img src="images/antenna_category.png" alt="Антени">
+          <h3>Антени</h3>
+        </div>
+        <div class="grid_item" data-category="Камери">
+          <img src="images/camera_category.png" alt="Камери">
+          <h3>Камери</h3>
+        </div>
+        <div class="grid_item" data-category="Відеопередавачі">
+          <img src="images/video_transmitter_category.png" alt="Відеопередавачі">
+          <h3>Відеопередавачі</h3>
+        </div>
+
+        
+        <div class="grid_item" data-category="Ресівери">
+          <img src="images/pigtails_category.png" alt="Ресівери">
+          <h3>Пігтейли</h3>
+        </div>
+        <div class="grid_item" data-category="Контролери">
+          <img src="images/controller_category.png" alt="Контролери">
+          <h3>Контролери</h3>
+        </div>
+        <div class="grid_item" data-category="Конденсатори">
+          <img src="images/capacitor_category.png" alt="Конденсатори">
+          <h3>Конденсатори</h3>
+        </div>
+        
+        <div class="grid_item center_item">
+          <img class="img_assembly" src="images/assembly_model.png" alt="">
+          
+        </div>
+        <div class="grid_item" data-category="Пропеллери">
+          <img src="images/propeller_category.png" alt="Пропеллери">
+          <h3>Пропеллери</h3>
+        </div>
+        <div class="grid_item" data-category="Рамі">
+          <img src="images/frame_category.png" alt="Рами">
+          <h3>Рами</h3>
+        </div>
+        <div class="grid_item" data-category="Обладнання">
+          <img src="images/equipment_category.png" alt="Обладнання">
+          <h3>Обладнання</h3>
+        </div>
+        
+        
+      </div>
+      
+      
+      <div id="modal" class="modal">
+    <div class="modal_content">
+      <span id="close_modal" class="close_button">&times;</span>
+      <h2 id="modal_title"></h2>
+      <ul id="modal_list"></ul>
+    </div>
+  </div>
+
+
+  <div class="assembly_block">
+    <h3>Збірка</h3>
+    <ul id="assembly_list"></ul>
+    <div class="total_cost">Загальна вартість: <span id="total_cost">0</span> грн</div>
+    <button id="clear_button">Очистити</button>
+
+  </div>
+      
+      
+</body>
+<script src="js/script.js"></script>
+<script src="js/assembly_script.js"></script>
+</html>
