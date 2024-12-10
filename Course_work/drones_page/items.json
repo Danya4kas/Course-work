@@ -7,6 +7,46 @@
       "price": 1900,
       "image": "SpeedyBee F405 V3 50A.png",
       "amount": 1
+    },
+    {
+      "id": 2,
+      "name": "6s2p Samsung 21700 8000 mah",
+      "category": "battery",
+      "price": 3022,
+      "image": "6s2p Samsung 21700 8000 mah.png",
+      "amount": 1
+    },
+    {
+      "id": 3,
+      "name": "RUSH TANK MAX SOLO 5.8GHz 2.5W",
+      "category": "transmitter",
+      "price": 3232,
+      "image": "RUSH TANK MAX SOLO 5.8GHz 2.5W.png",
+      "amount": 1
+    },
+    {
+      "id": 4,
+      "name": "LiIon 6s1p Samsung INR21700-40T",
+      "category": "battery",
+      "price": 1659,
+      "image": "Acum_6s1p.jpg",
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "name": "BAYCK ELRS 915MHz",
+      "category": "receiver",
+      "price": 530,
+      "image": "BAYCK ELRS 915MHz.png",
+      "amount": 2
+    },
+    {
+      "id": 6,
+      "name": "EVE INR21700-40P 4000mAh - 50A",
+      "category": "battery",
+      "price": 334,
+      "image": "RUSH MAX SOLO 5.8GHz 2.5W 48CH VTX.png",
+      "amount": 64
     }
   ],
   "drones": [
